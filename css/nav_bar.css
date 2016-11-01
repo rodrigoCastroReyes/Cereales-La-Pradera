@@ -1,0 +1,61 @@
+.principal-bar{
+	background-color: #f07d1d;
+	border: 0px;
+}
+
+.principal-bar-container{
+	width: 100%;
+	padding: 0px;
+	margin-right: 0px; 
+	margin-left: 0px;
+}
+
+.principal-bar > div > div {
+	max-height: 100%;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	border-radius: 0px;
+	z-index: 2;
+}
+
+.social-container,.language-container,.location-container{
+
+}
+
+.location-label{
+	font-family: 'cabana';
+	font-size: 32px;
+	color: white;
+	padding: 5px;
+	margin: 0px;
+}
+
+.location-input{
+	background-color: #f5a56a;
+	padding: 5px;
+	margin: 0px;
+}
+
+.location-icon{
+	color: white;
+	font-size: 36px;
+	margin-top: -5px;
+}
+
+.language-container > span{
+	font-family: 'cabana';
+	font-size: 24px;
+	margin: 0px 5px 0px 5px;
+	color: white;
+	font-weight: 500;
+}
+
+.language-container > span:nth-child(1){
+	margin-top: 10px;
+}
+
+.language-container > span:nth-child(2){
+	color: #f5a56a;
+}

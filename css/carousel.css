@@ -1,0 +1,30 @@
+/*carousel*/
+#myCarousel{
+	height: 100%;
+	margin: 0px;
+}
+
+.carousel-inner{
+	height: 100%;
+}
+
+.carousel-indicators{
+	left: 30%;
+	margin-bottom: 5px;
+	bottom: 0px;
+	padding: 20px;
+}
+
+.carousel-indicators li{
+	background-color: white;
+	border: none;
+	font-size: 40px;
+	width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators .active {
+	width: 15px;
+    height: 15px;
+    background-color: #e70025;
+}

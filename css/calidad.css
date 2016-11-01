@@ -1,0 +1,91 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.row{
+	height: 100%;
+	margin: 0px;
+}
+
+.principal-body{
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+    padding:0px;
+    height: 95%;
+}
+
+/*Floating container*/
+.principal-body-calidad{
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(245,154,55,1);
+}
+
+.principal-body-calidad h1{
+	color: white;
+	padding: 10px 0px 0px 50px;
+	font-family: 'awesome';
+	font-size: 42px;
+}
+
+.principal-body-volver{
+	height: 100%;
+}
+
+.principal-body-volver a{
+	color: #e70025;
+	font-family: 'cabana';
+	font-size: 42px;
+	padding: 80px 50px 40px 0px;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.principal-body-slider{
+	position: absolute; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding: 100px 50px 100px 50px;
+    left: 0;
+    top: 0;
+}
+
+#myCarousel{
+	height: 100%;
+	margin: 0px;
+}
+
+.carousel-inner{
+	height: 100%;
+
+}
+
+.carousel-indicators{
+	left: 30%;
+	margin-bottom: 5px;
+	bottom: 0px;
+	padding: 20px;
+}
+
+img{
+	width: 100%;
+}
+
+.carousel-indicators li{
+	background-color: white;
+	border: none;
+	font-size: 40px;
+	width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators .active {
+	width: 15px;
+    height: 15px;
+    background-color: #e70025;
+}

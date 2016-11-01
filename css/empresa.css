@@ -1,0 +1,44 @@
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.principal-body{
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+}
+
+.institucional-container,.calidad-container{
+    background-size: 100%;
+    height: 100%;
+    background-color: #9ac1f6;
+}
+
+.institucional-container > div{
+	height: 45%;
+}
+
+.noticias-container{
+    background-size: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #9ac1f6;
+}
+
+.row{
+	height: 100%;
+}
+
+.logo-container{
+    height: auto;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
