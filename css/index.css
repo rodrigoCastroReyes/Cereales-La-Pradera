@@ -1,31 +1,14 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	overflow-y: hidden; 
-}
-
-.principal-bar{
-	height: 5%;
+	overflow: visible;
+    overflow-y: visible; 
 }
 
 .principal-body{
 	margin-right: auto;
-    margin-left: auto;
-    height: 95%;
-}
-
-.principal-bar-container{
-	height: 100%;
-}
-
-.principal-body-granos,.principal-body-precocidos,.principal-body-harinas{
-	text-align: center;
-    background-size: 100% 100%;
-    max-width:100%;
-	max-height:100%;
-    height: 100%;
-    padding-bottom: 100px;
+	margin-left: auto;
+	height: 85%;
 }
 
 .principal-body-granos{
@@ -34,21 +17,31 @@ html,body{
 
 .principal-body-precocidos{
 	background-image:url('../images/precocidos.png');
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.principal-body-precocidos > div:nth-child(2){
-	margin-top: 20px;
-	height: 100%;
 }
 
 .principal-body-harinas{
 	background-image:url('../images/harinas.png');
+	background-position: right top;
+}
+
+
+.principal-body-empresa{
+	background-image:url('../images/trigo.jpg');
+	background-position: center;
+	height: 100%;
+}
+
+.principal-body-granos,.principal-body-precocidos,.principal-body-harinas{
+	height: 33.33%;
+	background-size: cover; 
+	background-position: center;
+	padding: 0px;
 }
 
 .logo-container{
-	height: auto;
+	background-image:url('../images/logoPortada.png');
+	background-size: 100% 100%; 
+	height: 35%;
 	width: 100%;
 }
 
@@ -65,23 +58,65 @@ img{
 }
 
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-    
+.location-label{
+	font-size: 20px;
+}
+
+.empresa-button{
+	height: 65%;
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) and (max-width:768px) {
-	.location-label{
-		font-size: 20px;
-	}
+@media only screen and (min-width : 320px) and (max-width:768px) {
+
+
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) and (max-width:992px) {
+@media only screen and (min-width : 768px){
+	html,body{
+		overflow: hidden;
+	    overflow-y: hidden; 
+	}
+
 	.location-label {
 	    font-size: 21px;
 	}
+
+	.principal-body{
+		margin-right: auto;
+    	margin-left: auto;
+    	height: 95%;
+	}
+
+	.principal-body-granos,.principal-body-precocidos,.principal-body-harinas{
+	    background-size: 100% 100%;
+	    height: 100%;
+	}
+
+	.principal-body-granos{
+		padding-top: 450px;
+	}
+
+	.principal-body-precocidos{
+		padding-bottom: 60px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.principal-body-precocidos > div:nth-child(2){
+		margin-top: 20px;
+		height: 100%;
+	}
+
+	.principal-body-harinas{
+		padding-top: 450px;
+	}
+
+	.logo-container{
+		height: 80%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -93,3 +128,4 @@ img{
 @media only screen and (min-width : 1200px) {
 
 }
+

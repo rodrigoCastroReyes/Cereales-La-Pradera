@@ -1,27 +1,19 @@
 .principal-bar{
 	background-color: #f07d1d;
 	border: 0px;
-}
-
-.principal-bar-container{
-	width: 100%;
 	padding: 0px;
-	margin-right: 0px; 
-	margin-left: 0px;
+	height: 15%;
 }
 
-.principal-bar > div > div {
-	max-height: 100%;
+.language-container,.social-container,.location-container{
+	height: 50%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
 }
 
-.navbar{
-	margin-bottom: 0px;
-	border-radius: 0px;
-	z-index: 2;
-}
-
-.social-container,.language-container,.location-container{
-
+.location-container{
+	background-color: #e70025;
 }
 
 .location-label{
@@ -58,4 +50,27 @@
 
 .language-container > span:nth-child(2){
 	color: #f5a56a;
+}
+
+
+@media only screen and (min-width : 768px){
+
+	.principal-bar{
+		height: 8%;
+		padding: 20px 0px 25px 0px;
+	}
+
+	.language-container,.social-container,.location-container{
+		height: 100%;
+	}
+
+	.location-container{
+		background-color: #f07d1d;;
+	}
+
+	.a-custom{
+		height: 40px;
+		width: 40px;
+		font-size: 32px;
+	}
 }
