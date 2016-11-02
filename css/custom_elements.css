@@ -6,6 +6,8 @@
     font-size: 32px;
     background-color: transparent;
     padding: 15px 32px;
+    width: auto;
+    height: 75px;
     color:white;
     font-family: 'awesome';
 }
