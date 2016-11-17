@@ -4,52 +4,80 @@
 	<title>La Pradera</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/institucional.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/flex.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom_elements.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-	<link rel="stylesheet" type="text/css" href="css/carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/institucional.css">
+	
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<style type="text/css">
+		/*carousel*/
+		#myCarousel{
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.carousel-inner{
+			height: 100%;
+		}
+
+		.carousel-indicators{
+			left: 30%;
+			margin-bottom: 5px;
+			bottom: 0px;
+			padding: 20px;
+		}
+
+		.carousel-indicators li{
+			background-color: white;
+			border: none;
+			font-size: 40px;
+			width: 15px;
+		    height: 15px;
+		}
+
+		.carousel-indicators .active {
+			width: 15px;
+		    height: 15px;
+		    background-color: #e70025;
+		}
+	</style>
 </head>
 <body>
-	<div class="principal-bar navbar navbar-default">
-		<div class="principal-bar-container row-flex">
-			<div class="social-container col-sm-4 col-md-4 row-flex align-items-center justify-content-start">
-				<a class="a-custom row-flex align-items-center justify-content-center" href="">
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-				</a>
-				<a class="a-custom row-flex align-items-center justify-content-center" href="">
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-				</a>
-				<a class="a-custom row-flex align-items-center justify-content-center"  href="">
-					<i class="fa fa-instagram" aria-hidden="true"></i>
-				</a>
-				<a class="a-custom row-flex align-items-center justify-content-center" href="">
-					<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-				</a>
-				<a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
-					<i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="location-container col-sm-4 col-md-4 row-flex align-items-center justify-content-center">
-				<span class="location-label" >AQUÍ ESTOY</span>
-				<input class="location-input" type="text">
-				<span class="location-icon glyphicon glyphicon-map-marker"></span>
-			</div>
-			<div class="language-container col-sm-4 col-md-4 row-flex justify-content-end align-items-center ">
-				<span class="row-flex align-items-end" >Idioma</span>
-				<span class="row-flex" style="font-size:36px;">ESP</span>
-				<span class="row-flex" style="font-size:36px;">ENG</span>
-			</div>
+	<div class="principal-bar">
+		<div class="location-container col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 row-flex align-items-center justify-content-center">
+			<span class="location-label" >AQUÍ ESTOY</span>
+			<input class="location-input" type="text">
+			<span class="location-icon glyphicon glyphicon-map-marker"></span>
+		</div>
+		<div class="social-container col-xs-6 col-sm-4 col-sm-pull-4 col-md-4 col-md-pull-4 row-flex align-items-center justify-content-start">
+			<a class="a-custom row-flex align-items-center justify-content-center" href="">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<a class="a-custom row-flex align-items-center justify-content-center" href="">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+			<a class="a-custom row-flex align-items-center justify-content-center"  href="">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>
+			<a class="a-custom row-flex align-items-center justify-content-center" href="">
+				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+			</a>
+		</div>
+		<div class="language-container col-xs-6 col-md-4 row-flex align-items-center justify-content-end">
+			<span class="row-flex align-items-end" >Idioma</span>
+			<span class="row-flex" style="font-size:36px;">ESP</span>
+			<span class="row-flex" style="font-size:36px;">ENG</span>
 		</div>
 	</div>
 	</div>
-	<div class="principal-body container-fluid">
+	<div class="principal-body">
 		<div class="row">
 			<div class="principal-body-slider col-md-12">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -90,10 +118,10 @@
 			</section>
 		</div>
 		<div class="row-floating column-flex justify-content-end">
-			<div class="institucional-container column-flex justify-content-space-between">
-				<a class="btn-custom" href="./mision.html">Mision</a>
-				<a class="btn-custom" href="./vision.html">Vision</a>
-				<a class="btn-custom" href="#">Historia</a>    	
+			<div class="institucional-container column-flex">
+				<a class="btn-custom flex-row justify-content" href="./mision.html">Mision</a>
+				<a class="btn-custom flex-row justify-content" href="./vision.html">Vision</a>
+				<a class="btn-custom flex-row justify-content" href="#">Historia</a>    	
 		  	</div>
 		</div>
 	</div>
