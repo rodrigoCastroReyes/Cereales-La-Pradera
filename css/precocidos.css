@@ -1,0 +1,201 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.procesados-main{
+		height: 100%;
+	}
+
+.principal-body{
+		margin-right: auto;
+		margin-left: auto;
+		height: 85%;
+		position: relative;
+	}
+
+.product-description{
+	width: 100%;
+	padding: 0;
+}
+
+img{
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+	
+@media(max-width: 767px) {
+
+	.principal-body-procesados{
+		background-image:url('../images/procesados.png');
+		background-position: center 235px;
+		height: 100%;
+	}
+
+	.logo-container{
+		background-image:url('../images/logoPortada.png');
+		background-size: 100% 100%; 
+		height: 280px;
+	}
+
+
+	/*Bootstrap overrides*/
+	.row{
+		height: 560px;
+	}
+	.a-custom{
+		width: 38px;
+		height: 38px;
+		background-color: white;
+		margin: 3px 4px 0px 4px;
+		font-size: 29px;
+		font-weight: bold;
+		color: #f07d1d;
+	}
+
+	.btn-custom{
+		margin: 10px 27px 10px 27px;
+		height: 70px;
+		font-size: 30px;
+	}
+
+	.location-input{
+		background-color: #F6A1AF;
+		height: 45%;
+		box-shadow: -1px -1px black;
+	}
+
+	.principal-bar{
+		background-color: #f07d1d;
+		border: 0px;
+		padding: 0px;
+		height: 15%;
+	}
+
+	.description{
+		margin-top: 40px;
+	}
+
+	.title{
+		margin: 0 0 10px 15px;
+		font-family: 'awesome';
+		color: #e70025;
+		font-size: 55px;
+	}
+
+	.description-info{
+		font-size: 22px;
+		margin: 0 42px 0 32px;
+	}
+
+	.product-list{
+		margin-top: 40px;
+	}
+
+	.subtitle{
+		margin-left: 32px;
+		font-family: 'cabana';
+		font-size: 56px;
+		color: #E70025;
+	}
+
+	.image-pic{
+		display: block;
+		margin: auto;
+		height: 250px;
+	}
+
+	.image-title{
+		font-family: 'cabana';
+		font-size: 36px;
+		color: #E70025;
+	}
+}
+
+@media(min-width: 768px){
+	.row-floating{
+		position: absolute; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		height: 400px;
+		width: 35%; /* Full width */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgba(243, 153, 67, 0.60);
+	}
+	.principal-body-procesados{
+		background-image:url('../images/precocido.png');
+		background-position: right;
+		background-size : cover;
+		height: 400px;
+	}
+	.institucional-container{
+		height: 60%;
+		padding: 20px 80px 20px 80px;
+	}
+	.title{
+		margin: 55px 0 0 0;
+		font-family: 'awesome';
+		color: #e70025;
+		font-size: 55px;
+		text-align: center;
+	}
+	.description-info{
+		font-size: 25px;
+		margin: 0 100px 0 100px;
+		text-align: center;
+	}
+	.btn-custom{
+		border: 2px solid rgba(255,255,255,0.8);
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 35px;
+		text-shadow: 1px 2px black;
+		background-color: transparent;
+		padding: 15px 32px;
+		width: auto;
+		height: 75px;
+		color: white;
+		font-family: 'awesome';
+		box-shadow: 0 8px 16px 0 rgba(0,0,00,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+	}
+	.logo-container{
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		z-index: 1;
+		background-image:url('../images/logoPortada.png');
+		background-position: center;
+		background-size: cover;
+		height: 100px;
+		width: 15%; /* Full width */
+	}
+	.product-list{
+		margin-top: 100px;
+		width: 100%;
+	}
+	.subtitle{
+		text-align: center;
+		font-family: 'cabana';
+		font-size: 56px;
+		color: #E70025;
+	}
+	.image-pic{
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 280px;
+	}
+
+	.image-title{
+		font-family: 'cabana';
+		font-size: 36px;
+		color: #E70025;
+	}
+}
+
