@@ -139,7 +139,7 @@ html,body{
 		height: 400px;
 		width: 35%; /* Full width */
 		overflow: auto; /* Enable scroll if needed */
-		background-color: rgba(243, 153, 67, 0.60);
+		background-color: rgba(245, 154, 55, 0.8);
 	}
 	.principal-body-procesados{
 		background-image:url('../images/granos_pag.png');
