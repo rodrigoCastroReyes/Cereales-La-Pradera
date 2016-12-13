@@ -18,8 +18,9 @@
 
 .location-label{
 	font-family: 'cabana';
-	font-size: 32px;
 	color: white;
+	font-size: 15px;
+	font-weight: bold;
 	padding: 5px;
 	margin: 0px;
 }
