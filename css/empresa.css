@@ -1,7 +1,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    overflow: visible;
+    overflow-x: visible;
     overflow-y: visible; 
 }
 
@@ -31,7 +31,7 @@ html,body{
 
 .principal-body-institucional-btns{
     height: 65%;
-    padding: 25px 75px 50px 75px;
+    padding: 25px 70px 20px 70px;
 }
 
 .principal-body-noticias,.principal-body-calidad{
