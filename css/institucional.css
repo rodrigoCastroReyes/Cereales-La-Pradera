@@ -1,8 +1,8 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	overflow-y: hidden; 
+	overflow: visible;
+	overflow-y: visible; 
 }
 
 .principal-body{
@@ -11,6 +11,38 @@ html,body{
 	margin-right: auto;
 	margin-left: auto;
 	height: 92%;
+}
+.principal-body-mision{
+	position: relative; 
+	height: 100%;
+}
+
+.row{
+	height: 100%;
+}
+
+.principal-body-logo {
+	position: absolute; 
+    background-image: url('../images/logoPortada.png');
+    background-size: 100% 100%;
+    height: 35%;
+    width: 100%;
+    z-index: 1; /* Sit on top */
+}
+.principal-body-slider{
+	height: 50%;
+	padding: 0px;
+	margin-top: -10%;
+}
+
+.principal-body-buttons{
+	height: 15%;
+	background-color: #f07d1d;
+}
+
+.principal-body-buttons > a {
+	margin: 10px 10px 10px 10px;
+	height: auto;
 }
 
 .principal-bar{
@@ -25,17 +57,13 @@ html,body{
 	height: 100%;
 }
 
-.principal-body> div:nth-child(1){
-	height: 40%;
-}
-
-.principal-body> div:nth-child(2){
-	height: 60%;
+.principal-section{
+	height: 100%;
 }
 
 .principal-body-section{
+	height: 100%;
 	margin-top: 50px;
-	
 }
 
 .principal-body-title{
@@ -48,7 +76,7 @@ html,body{
 	font-size: 24px;
 }
 
-.principal-body-slider,.principal-body-section{
+.principal-body-section{
 	padding: 0px;
 	height: 100%;
 }
@@ -62,7 +90,6 @@ img{
 
 /*Floating container*/
 .row-floating{
-
 	position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -88,3 +115,6 @@ img{
 	padding: 20px;
 }
 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
