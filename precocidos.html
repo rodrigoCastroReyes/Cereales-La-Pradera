@@ -11,11 +11,21 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom_elements.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-		<link rel="stylesheet" type="text/css" href="css/precocidos.css">
+	<link rel="stylesheet" type="text/css" href="css/precocidos.css">
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="lib/jquery.scrollUp.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
+	<script>
+		$(function () {
+			$.scrollUp({
+				animation: 'fade',
+				activeOverlay: '#00FFFF',
+				scrollText: 'Ir Arriba'
+			});
+		});
+		$('.link-switch').addClass('active');
+	</script>
 </head>
 <body>
 	<div class="procesados-main hidden-md-up">
@@ -71,7 +81,7 @@
 			</div>
 			<div class="product-list">
 				<h1 class="subtitle">Lista de Productos</h1>
-				<div class="product-description col-xs-12">
+				<div class="product-description col-xs-11">
 					<div class="col-xs-6">
 						<img class="image-pic" src="./images/precocidos/VAR_3347.jpg"></img>
 						<div class="image-title text-center">Maíz Arepa Amarilla</div>
@@ -187,7 +197,6 @@
 				</div>
 			</div>
 		</div>
-			
 		</div>
 	</div>
 </body>

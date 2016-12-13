@@ -16,7 +16,7 @@
 .btn-custom:hover{
 	text-decoration: none; /* no underline */
 	/*box-shadow: 0 8px 16px 0 rgba(244,67,54,0.5), 0 6px 20px 0 rgba(244,67,54,0.25);*/
-	box-shadow: 0 8px 16px 0 rgba(0,0,00,0.50), 0 6px 20px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.50), 0 6px 20px 0 rgba(0,0,0,0.5);
 	color: white;
 }
 

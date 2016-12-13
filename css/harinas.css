@@ -40,7 +40,7 @@ html,body{
 		color: #E70025;
 	}
 	.principal-body-procesados{
-		background-image:url('../images/procesados.png');
+		background-image:url('../images/harina.png');
 		background-position: center 227px;
 		height: 100%;
 	}
@@ -142,7 +142,7 @@ html,body{
 		background-color: rgba(243, 153, 67, 0.60);
 	}
 	.principal-body-procesados{
-		background-image:url('../images/precocido.png');
+		background-image:url('../images/harina.png');
 		background-position: right;
 		background-size : cover;
 		height: 400px;

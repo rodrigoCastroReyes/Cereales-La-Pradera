@@ -62,6 +62,7 @@ img{
 
 /*Floating container*/
 .row-floating{
+
 	position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -70,6 +71,7 @@ img{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(245,154,55,0.8);
+	
 }
 
 .institucional-container{
