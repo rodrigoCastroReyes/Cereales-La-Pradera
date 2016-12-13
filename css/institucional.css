@@ -32,16 +32,16 @@ html,body{
 .principal-body-slider{
 	height: 50%;
 	padding: 0px;
-	margin-top: -10%;
+	margin-top: -15%;
 }
 
 .principal-body-buttons{
-	height: 15%;
+	height: 20%;
 	background-color: #f07d1d;
 }
 
 .principal-body-buttons > a {
-	margin: 10px 10px 10px 10px;
+	margin: 10px 10px 30px 10px;
 	height: auto;
 }
 
@@ -98,7 +98,6 @@ img{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(245,154,55,0.8);
-	
 }
 
 .institucional-container{
