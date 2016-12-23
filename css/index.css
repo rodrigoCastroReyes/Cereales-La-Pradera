@@ -6,8 +6,7 @@ html,body{
 }
 
 .principal-body{
-	margin-right: auto;
-	margin-left: auto;
+	padding: 0px 15px;
 	height: 85%;
 }
 
@@ -67,6 +66,7 @@ img{
 /*Bootstrap overrides*/
 .row{
 	height: 100%;
+	margin: 0px;
 }
 
 
@@ -96,8 +96,6 @@ img{
 	}
 
 	.principal-body{
-		margin-right: auto;
-    	margin-left: auto;
     	height: 95%;
 	}
 
