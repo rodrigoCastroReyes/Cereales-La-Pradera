@@ -17,6 +17,10 @@
 	padding: 0px;
 }
 
+.location-container > div{
+	height: 100%;
+}
+
 .location-label{
 	font-family: 'cabana';
 	color: white;
