@@ -1,28 +1,33 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	overflow: visible;
+	overflow-x: visible;
 	overflow-y: visible; 
 }
+  
 
 .principal-body{
-	padding: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	height: 92%;
+	height: 85%;
 }
-.principal-body-mision{
-	position: relative; 
+
+.principal-mision{
+	position: relative;
 	height: 100%;
+	width: 100%;
 }
 
 .row{
 	height: 100%;
+	padding: 0px;
 }
 
-.principal-body-logo {
-	position: absolute; 
+.principal-mision-logo {
+	position: relative;
     background-image: url('../images/logoPortada.png');
     background-size: 100% 100%;
     height: 35%;
@@ -30,20 +35,25 @@ html,body{
     z-index: 1; /* Sit on top */
 }
 
-.principal-body-slider{
-	height: 50%;
+.principal-mision-slider{
+	height: 35%;
 	padding: 0px;
-	margin-top: -15%;
+	margin-top: -10%;
 }
 
-.principal-body-buttons{
+.principal-mision-buttons{
 	height: 20%;
 	background-color: #f07d1d;
 }
 
-.principal-body-buttons > a {
-	margin: 10px 10px 30px 10px;
-	height: auto;
+.principal-mision-buttons > a {
+	/*margin: 10px 10px 30px 10px;
+	height: auto;*/
+	margin: 0px 10px 0px 10px;
+}
+
+.principal-container{
+	height: 100%;
 }
 
 .principal-bar{
@@ -54,39 +64,30 @@ html,body{
 	height: 100%;
 }
 
-.row{
-	height: 100%;
-}
-
 .principal-section{
 	height: 100%;
 }
 
-.principal-body-section{
+.principal-section>section{
 	height: 100%;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 
-.principal-body-title{
+.principal-section-title{
 	color: #e70025;
 	font-family: 'awesome';
 	font-size: 36px;
 }
 
-.principal-body-paragraph{
+.principal-section-paragraph{
 	font-size: 24px;
 }
 
-.principal-body-section{
-	padding: 0px;
-	height: 100%;
-}
-
-img{
-    left: 0px;
-    width: 100%;
-    max-width:100%;
-	max-height:100%;
+img {
+  display: block;
+  width: auto;
+  height: 100px;
 }
 
 /*Floating container*/
@@ -101,18 +102,10 @@ img{
     background-color: rgba(245,154,55,0.8);
 }
 
-.institucional-container{
-	height: 65%;
-	background-color: rgba(245,154,55,1);
-	padding: 20px 80px 60px 80px;
-}
-
-.institucional-container> a{
-	margin: 10px 0px 10px 0px;
-	text-align: center;
-}
 .btn-custom{
-	padding: 20px;
+	width: 150px;
+    margin-right: 10px;
+    height: 85px;
 }
 
 .carousel-inner > .item > img {
@@ -131,30 +124,75 @@ img{
 	html,body{
 		overflow-x: hidden;
 		overflow-y: hidden;
-	}
-	.principal-body-mision{
-		position: absolute;
-		height: 35%;
 		padding: 0px;
+	}
+
+	.principal-body{
+		height: 92%;
+	}
+
+	.container{
+		margin: 0px;
+	}
+	
+	.principal-mision{
+		height: 45%;
+		padding: 0px;
+		width: 100%;
 	}	
 
 	.principal-section{
-		height: 65%;
+		height: 55%;
 		padding: 0px;
 	}
 
-	.principal-body-slider{
+	.principal-section-paragraph{
+    	font-size: 18px;
+	}
+
+	.principal-mision-slider{
 		height: 100%;
 		padding: 0px;
 		margin-top: 0px;
 	}
-	
-	.principal-body-paragraph {
-    	font-size: 20px;
-	}
 
 	.carousel-indicators{
 		left: 60%;
+	}
+
+	.side-bar{
+		height: 100%; /* Full height */
+    	padding: 0px;
+	}
+
+	.side-bar-image{
+		height: 45%;
+    	background-size: cover;
+   		background-position: center;
+   		background-image:url('../images/calidad.jpg');
+	}
+
+	.side-bar-image > div{
+		background-color: rgba(245,154,55,0.6);
+		width:100%;
+		height: 100%;
+		padding: 0px;
+	}
+
+	.side-bar-institucional{
+		height: 55%;
+		background-color: rgba(245,154,55,1);
+		padding: 40px 80px 0px 80px;
+	}
+
+	.side-bar-institucional> a{
+		margin: 15px 0px 10px 0px;
+		text-align: center;
+	}
+
+	.btn-custom{
+		width: 250px;
+		margin: 10px;
 	}
 
 }
