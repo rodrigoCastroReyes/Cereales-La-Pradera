@@ -1,0 +1,112 @@
+#scrollUp-active{
+	visibility: hidden;
+}
+
+@media only screen and (min-width : 768px){
+	.history-board{
+	overflow: auto;
+	height: 300px;
+	}
+
+	.subtitle{
+		margin-bottom: -5px;
+		font-family: 'cabana';
+		font-size: 50px;
+		color: #E70025;
+	}
+}
+
+	
+@media only screen and (max-width : 767px) {
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+	/* Text link style */
+	#scrollUp {
+		bottom: 20px;
+		right: 20px;
+		font-family: 'cabana';
+		font-size: 25px;
+		color: #E70025;
+	}
+	
+	.principal-body-section{
+		margin-top: 0;
+	}
+	
+	.principal-body-historia{
+		height: 100%;
+		background-image:url('../images/historia.png');
+		background-position: center 100%;
+		background-size: 148% 55%; 
+	}
+
+	.logo-container{
+		width: 100%;
+		background-image:url('../images/logoPortada.png');
+		background-size: 100% 100%; 
+		height: 56%;
+	}
+
+
+	/*Bootstrap overrides*/
+	.picture_row{
+		width: 100%;
+		height: 70%;
+	}
+	.principal-body-volver{
+		margin-bottom: -38px;
+		font-family: 'cabana';
+		font-size: 35px;
+	}
+
+	.btn-custom{
+		margin-right: 7px;
+		margin-left: 7px;
+	}
+
+	.location-input{
+		background-color: #F6A1AF;
+		height: 60%;
+		box-shadow: -1px -1px black;
+	}
+	
+	.title{
+		padding: 0;
+		font-family: 'awesome';
+		color: #e70025;
+		font-size: 40px;
+	}
+
+	.principal-body-paragraph{
+		font-size: 18px;
+		margin: -10px 0 30px 0;
+	}
+
+	.product-list{
+		margin-top: 30px;
+	}
+
+	.subtitle{
+		margin-top: -20px;
+		font-family: 'cabana';
+		font-size: 50px;
+		color: #E70025;
+	}
+
+	.image-pic{
+		display: block;
+		margin: auto;
+		height: 180px;
+	}
+
+	.image-title{
+		font-family: 'cabana';
+		font-size: 28px;
+		color: #E70025;
+	}
+	
+}
+
