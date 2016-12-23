@@ -17,9 +17,9 @@ html,body{
 
 .principal-body-institucional{
     height: 100%;
-    background-image:url('../images/institucional.png');
+    background-image:url('../images/institucional.jpg');
     background-position: center;
-    background-size: 100% 100%; 
+    background-size: cover; 
 }
 
 .logo-container{
@@ -39,20 +39,23 @@ html,body{
 }
 
 .principal-body-noticias{
-    background-image:url('../images/noticias.png');
-    background-size: 100% 100%; 
+    background-image:url('../images/noticias.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .principal-body-calidad{
-    background-image:url('../images/calidad.png');
-    background-size: 100% 100%; 
+    background-image:url('../images/calidad.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 @media only screen and (min-width : 768px){
+
     html,body{
         width: 100%;
         height: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         overflow-y: hidden; 
     }
 
@@ -82,36 +85,8 @@ html,body{
         left: 0;
     }
 
-    /*
-    .calidad-container{
-        background-size: 100%;
-        height: 100%;
-        background-color: #9ac1f6;
+    .principal-body-noticias, .principal-body-calidad{
+        background-size: 100% 100%; 
     }
-
-    .institucional-container > div{
-        height: 45%;
-    }
-
-    .noticias-container{
-        background-size: 100%;
-        height: 100%;
-        padding: 0px;
-        background-color: #9ac1f6;
-    }
-
-    .row{
-        height: 100%;
-    }
-
-    .logo-container{
-        height: auto;
-        width: 100%;
-    }
-
-    img{
-        width: 100%;
-    }*/
-
 
 }
