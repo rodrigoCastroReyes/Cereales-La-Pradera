@@ -2,7 +2,7 @@ html,body{
 	width: 100%;
 	height: 100%;
 	overflow: visible;
-    overflow-y: visible; 
+    overflow-x: hidden; 
 }
 
 .principal-body{	
@@ -21,15 +21,23 @@ html,body{
 }
 
 .step-one{
+	position: relative;
 	background-image:url('../images/proceso/FondoAmarillo1.png');
 }
 
 .step-two{
+	position: relative;
 	background-image:url('../images/proceso/FondoGrande2.png');
 }
 
 .step-three{
+	position: relative;
 	background-image:url('../images/proceso/FondoGrande3.png');
+}
+
+.step-four{
+	position: relative;
+	background-image:url('../images/proceso/fondo4.png');
 }
 
 .step-one,.step-two,.step-three,.step-four{
@@ -49,7 +57,21 @@ html,body{
 	margin-bottom: 50px;
 }
 
+.step-one-productos{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/proceso/VerLista.png');
+    height: 100%;
+    top: 80%;
+    left: 80%;
+    cursor: pointer;
+}
+
 .step-two-legend{
+	position: relative;
 	background-color: #faf7b4;
 	color: #e61d2f;
 	font-family: 'cabana';
@@ -57,12 +79,32 @@ html,body{
 	font-weight: 600;
 	padding: 20px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.step-one-campesino{
+	position: absolute;
+	top: 0;
+	right: 30%;
+	width: 100%;
+	height: 100%;
+    background-image:url('../images/proceso/campesino2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.65;
 }
 
 .step-two-machine{
+	position: absolute;
+	top: 0;
+	left: 50;
+	width: 25%;
 	height: 100%;
     background-color: #e31e2f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
 }
 
 .step-three-legend{
@@ -74,13 +116,51 @@ html,body{
 	padding: 20px;
 	text-align: center;
 	margin-bottom: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.step-three-machine{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90%;
+	background-image:url('../images/proceso/maquina.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
+.step-four-legend{
+	background-color: #f18221;
+	color: white;
+	font-family: 'cabana';
+	font-size: 36px;
+	font-weight: 600;
+	padding: 20px;
+	text-align: center;
+	margin-top: 60px;
+	margin-left: 40px;
 }
 
 .step-four-machine{
+	position: absolute;
+	top: 0;
+	left: 0;
 	height: 90%;
+	background-image:url('../images/proceso/maquina2.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
 }
 
 .step-four-footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+    left: 0;
 	height: 10%;
 	padding-top: 10px;
 	background-color: #e31e2f;
@@ -90,4 +170,5 @@ html,body{
 	color: white;
 	text-align: center;
 	vertical-align: center;
+
 }
