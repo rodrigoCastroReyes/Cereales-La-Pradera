@@ -26,22 +26,32 @@ html,body{
 
 .principal-body-calidad h1{
 	color: white;
-	padding: 10px 0px 0px 50px;
+	padding: 25px 0px 0px 50px;
 	font-family: 'awesome';
-	font-size: 42px;
+	font-size: 32px;
 }
 
 .principal-body-volver{
 	height: 100%;
+	position: relative;
 }
 
 .principal-body-volver a{
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+	z-index: 1000;
 	color: #e70025;
 	font-family: 'cabana';
-	font-size: 42px;
-	padding: 80px 50px 40px 0px;
+	font-size: 36px;
 	cursor: pointer;
-	pointer-events: auto;
+	padding: 40px 20px 40px 0px;
+}
+
+.principal-body-volver a:hover{
+	text-decoration: none; /* no underline */
+	color:#f44336;
+	font-weight: bold;
 }
 
 .principal-body-slider{
@@ -50,10 +60,12 @@ html,body{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    padding: 100px 50px 100px 50px;
+    padding: 45px 50px 100px 50px;
     left: 0;
     top: 0;
 }
+
+
 
 #myCarousel{
 	height: 100%;
@@ -93,4 +105,38 @@ img{
 .carousel-inner > .item > img{
    width:100%;
    height:450px;
+}
+
+@media only screen and (min-width : 768px){
+
+	.principal-body-calidad h1{
+		color: white;
+		padding: 25px 0px 0px 50px;
+		font-family: 'awesome';
+		font-size: 42px;
+	}
+
+	.principal-body-volver a{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1000;
+		color: #e70025;
+		font-family: 'cabana';
+		font-size: 42px;
+		padding: 80px 50px 40px 0px;
+		cursor: pointer;
+	}
+
+	.principal-body-slider{
+		position: absolute; /* Stay in place */
+	    z-index: 100; /* Sit on top */
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    	left: 50%; /* position the left edge of the element at the middle of the parent */
+    	transform: translate(-50%, -50%);
+	}
+
 }

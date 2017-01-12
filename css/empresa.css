@@ -21,15 +21,9 @@ html,body{
     background-size: cover; 
 }
 
-.logo-container{
-    background-image:url('../images/logoPortada.png');
-    background-size: 100% 100%; 
-    height: 35%;
-    width: 100%;
-}
-
 .principal-body-institucional-btns{
     height: 65%;
+    margin-top: 150px;
     padding: 25px 70px 20px 70px;
 }
 
@@ -84,6 +78,10 @@ html,body{
 
     .principal-body-noticias, .principal-body-calidad{
         background-size: 100% 100%; 
+    }
+
+    .logo-container{
+
     }
 
 }

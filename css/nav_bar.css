@@ -1,3 +1,7 @@
+input{
+    
+}
+
 .principal-bar{
 	background-color: #f07d1d;
 	border: 0px;
@@ -7,14 +11,12 @@
 
 .language-container,.social-container,.location-container{
 	height: 50%;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
+	padding: 5px 5px;
 }
 
 .location-container{
 	background-color: #e70025;
-	padding: 0px;
+	padding: 2px;
 }
 
 .location-container > div{
@@ -32,18 +34,15 @@
 	text-align: center;
 }
 
-.location-input{
-	background-color: #f5a56a;
-	padding: 1px;
-	margin: 0px;
+.location-icon-container{
+
+}
+
+.location-input-container{
+	padding: 0px;
 	width: 100%;
 }
 
-.location-icon{
-	color: white;
-	font-size: 36px;
-	margin-top: -5px;
-}
 
 .language-container > span{
 	font-family: 'cabana';
@@ -61,12 +60,50 @@
 	color: #f5a56a;
 }
 
+.location-input{
+	background-color: transparent;
+	border: none;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+    font-family: 'cabana';
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.65;
+}
+
+.location-input:hover{
+	background-color: transparent;
+	border: none;
+}
+
+.location-input:focus{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.location-icon{
+	padding: 0px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	font-size: 30px;
+}
+
+.search-icon{
+	padding: 0px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color:  white;
+	font-size: 28px;
+}
+
 
 @media only screen and (min-width : 768px){
 
 	.principal-bar{
 		height: 8%;
-		padding: 20px 0px 25px 0px;
 	}
 
 	.language-container,.social-container,.location-container{
@@ -74,7 +111,7 @@
 	}
 
 	.location-container{
-		background-color: #f07d1d;;
+		background-color: #f07d1d;
 	}
 
 	.a-custom{
@@ -89,4 +126,41 @@
 		width: 100px;
 	}
 
+	.location-input-container{
+		background-color: white;
+		padding: 0px;
+		width: 100%;
+	}
+
+	.location-icon{
+		padding: 0px;
+		padding-left: 25px;
+		padding-right: 25px;
+		color: #f07d1d;
+		font-size: 30px;
+	}
+
+	.search-icon{
+		padding: 0px;
+		padding-left: 25px;
+		padding-right: 25px;
+		color: #f07d1d;
+		font-size: 28px;
+	}
+
+	.location-icon:hover,.search-icon:hover{
+		color:#f44336;
+		cursor: pointer;
+	}
+
+}
+
+.logo-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url('../images/logoPortada.png');
+    background-size: 100% 100%; 
+    height: 35%;
+    width: 100%;
 }
