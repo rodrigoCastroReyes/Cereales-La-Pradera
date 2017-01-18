@@ -7,3 +7,9 @@
 	font-family: 'cabana';
 	src:url('../fonts/Cabana-Regular.otf');
 }
+
+
+@font-face{
+	font-family: 'Malbeck-Regular';
+	src:url('../fonts/Malbeck-Regular.ttf');
+}

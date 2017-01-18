@@ -15,15 +15,15 @@
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3GG1bWOb8u2eCEteiCY1yGnaKrqgW6R4&libraries=places"></script>
+	
 	<script type="text/javascript" src="js/user_geolocation.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
 </head>
 <body>
 	<div class="principal-bar">	
 		<div class="location-container col-xs-12 col-sm-12 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
 			<div class="location-input-container row-flex align-items-center">
-				<span class="location-icon glyphicon glyphicon-map-marker"></span>
+				<span id="btn_show_location" class="location-icon glyphicon glyphicon-map-marker"></span>
 				<input id="address" class="location-input" type="text" placeholder="AQUI ESTOY">
 				<span class="search-icon glyphicon glyphicon glyphicon glyphicon-ok"></span>
 			</div>
@@ -32,13 +32,13 @@
 			<a class="a-custom row-flex align-items-center justify-content-center" href="https://www.facebook.com/www.cerealeslapradera.ec/">
 				<i class="fa fa-facebook" aria-hidden="true"></i>
 			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" href="">
+			<a class="a-custom row-flex align-items-center justify-content-center" href="https://twitter.com/LaPradera_ec">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
 			<a class="a-custom row-flex align-items-center justify-content-center"  href="https://www.instagram.com/cereales_la_pradera/">
 				<i class="fa fa-instagram" aria-hidden="true"></i>
 			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" href="">
+			<a id="btn_show_message" class="a-custom row-flex align-items-center justify-content-center" href="#">
 				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
 			</a>
 		</div>
@@ -47,6 +47,50 @@
 			<span class="row-flex" style="font-size:36px;cursor:pointer;">ESP</span>
 			<span class="row-flex" style="font-size:36px;cursor:pointer;">ENG</span>
 		</div>
+		<div id="modal_map" class="modal fade" role="dialog">
+	      <div class="modal-dialog">
+	        <!-- Modal content-->
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <h3 class="modal-title">De dónde nos visitas ?</h3>
+	          </div>
+	          <div class="modal-body">
+	          	<div id="map">
+	          		
+	          	</div>
+	          </div>
+	          <div class="modal-footer">
+	        	<button id="btn_save_location" type="button" class="btn btn-primary glyphicon glyphicon-ok"></button>
+	        	<button type="button" class="btn btn-secondary glyphicon glyphicon-remove" style="color:red;" data-dismiss="modal"></button>
+	      	  </div>
+	        </div>
+	      </div>
+    	</div>
+    	<div id="modal_message" class="modal fade" role="dialog">
+    		<div class="modal-dialog modal-lg" style="width: 500px;">
+		        <div class="modal-content">
+		          <div class="modal-header">
+		            <h3 class="modal-title">Contacto</h3>
+		          </div>
+		          <div class="modal-body">
+		          	<form>
+			          <div class="form-group">
+			            <label for="sender-name" class="control-label label-sender">De:</label>
+			            <input type="text" class="form-control" id="sender-name">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label label-message">Mensaje:</label>
+			            <textarea class="form-control" id="message-text"></textarea>
+			          </div>
+			        </form>
+		          </div>
+		          <div class="modal-footer">
+		        	<button id="btn_send_message" type="button" class="btn btn-primary glyphicon glyphicon glyphicon-ok"></button>
+		        	<button type="button" class="btn btn-secondary glyphicon glyphicon-remove" style="color:red;" data-dismiss="modal"></button>
+		      	  </div>
+		        </div>
+	      	</div>
+    	</div>
 	</div>
 	<div class="principal-body">
 		<div class="row">
@@ -54,27 +98,30 @@
 		  <div class="principal-body-empresa col-xs-12 hidden-md-up" style="padding:0px;">
 		  	<div class="logo-container row-flex justify-content-center">
 		  	</div>
-		  	<div class="empresa-button row-flex justify-content-center align-items-center">
-		  		<a class="btn-custom" href="./empresa.html">La empresa</a>
+		  	<div class="empresa-button row-flex justify-content-center align-items-end">
+		  		<a class="btn-custom row-flex justify-content-center align-items-center" href="./empresa.html">La empresa</a>
 		  	</div>
 		  </div>
 
-		  <div class="principal-body-granos row-flex justify-content-center align-items-center col-xs-12 col-sm-4 col-md-4 ">
-		  	<a class="btn-custom" href="./granos.html">Granos</a>-
+		  <div class="principal-body-granos row-flex justify-content-center align-items-end col-xs-12 col-sm-12 col-md-4 ">
+		  	<a class="btn-custom row-flex justify-content-center align-items-center" href="./granos.html">
+		  		Granos
+		  	</a>
 		  </div>
 
-		  <div class="principal-body-precocidos row-flex justify-content-center align-items-center col-xs-12 hidden-md-up">
-		  	<a class="btn-custom" href="./precocidos.html">Precocidos</a>-
+		  <div class="principal-body-precocidos row-flex justify-content-center align-items-center col-xs-12 ol-sm-12 hidden-md-up">
+		  	<a class="btn-custom row-flex justify-content-center align-items-center" href="./precocidos.html">		Precocidos
+		  	</a>
 		  </div>
 
-		  <div class="principal-body-harinas row-flex justify-content-center align-items-center col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4">
-		  	<a class="btn-custom" href="./harinas free.html">Harinas Gluten Free</a>
+		  <div class="principal-body-harinas row-flex justify-content-center align-items-end col-xs-12 col-sm-12 col-sm-push-4 col-md-4 col-md-push-4">
+		  	<a class="btn-custom row-flex justify-content-center align-items-center" href="./harinas free.html">Harinas</a>
 		  </div>
 
 
-		  <div class="principal-body-precocidos column-flex justify-content-space-around align-items-center col-sm-4 col-sm-pull-4 col-md-4 col-md-pull-4 hidden-sm-down" style="padding-left:0px; padding-right:0px">
-		  	<a class="btn-custom col-md-12" href="./empresa.html">La empresa</a>
-		  	<a class="btn-custom col-md-12" href="./precocidos.html">Precocidos</a>
+		  <div class="principal-body-precocidos column-flex justify-content-end align-items-center col-sm-4 col-sm-pull-4 col-md-4 col-md-pull-4 hidden-sm-down" style="padding-left:0px; padding-right:0px">
+		  	<a class="principal-body-precocidos-empresa btn-custom col-md-12 row-flex justify-content-center align-items-center" href="./empresa.html">La empresa</a>
+		  	<a class="btn-custom col-md-12 row-flex justify-content-center align-items-center" href="./precocidos.html">Precocidos</a>
 		  	<div class="logo-container">
 		  	</div>
 		  </div>

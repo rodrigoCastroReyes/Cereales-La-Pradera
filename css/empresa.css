@@ -22,9 +22,9 @@ html,body{
 }
 
 .principal-body-institucional-btns{
-    height: 65%;
-    margin-top: 150px;
-    padding: 25px 70px 20px 70px;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 30px;
 }
 
 .principal-body-noticias,.principal-body-calidad{
@@ -41,6 +41,16 @@ html,body{
     background-image:url('../images/calidad.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.btn-mision,.btn-vision,.btn-historia{
+    width: 150px;
+    margin: 20px;
+    height: 60px;
+}
+
+.modal-lg{
+    width: 500px;
 }
 
 @media only screen and (min-width : 768px){
@@ -80,8 +90,21 @@ html,body{
         background-size: 100% 100%; 
     }
 
-    .logo-container{
+    .btn-mision,.btn-vision,.btn-historia{
+        width: 150px;
+        margin: 20px;
+    }
 
+    .btn-custom{
+        width: 150px;
+        height: 55px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .principal-body-institucional-btns{
+        height: 100%;
+        padding-bottom: 100px;
     }
 
 }
