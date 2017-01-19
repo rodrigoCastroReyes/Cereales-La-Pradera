@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom_elements.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/granos.css">-->
-	<link rel="stylesheet" type="text/css" href="css/granos.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/product_lists.css"></link>
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jquery.scrollUp.min.js" ></script>
@@ -32,14 +32,14 @@
 </head>
 <body>
 	<div class="principal-bar">	
-		<div class="location-container col-xs-12 col-sm-12 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
+		<div class="location-container col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
 			<div class="location-input-container row-flex align-items-center">
 				<span class="location-icon glyphicon glyphicon-map-marker"></span>
 				<input id="address" class="location-input" type="text" placeholder="AQUI ESTOY">
 				<span class="search-icon glyphicon glyphicon glyphicon glyphicon-ok"></span>
 			</div>
 		</div>
-		<div class="social-container col-xs-6 col-sm-6 col-md-4 col-md-pull-4 row-flex align-items-center justify-content-start">
+		<div class="social-container col-xs-6 col-sm-4 col-sm-pull-4 col-md-4 col-md-pull-4 row-flex align-items-center justify-content-start">
 			<a class="a-custom row-flex align-items-center justify-content-center" href="https://www.facebook.com/www.cerealeslapradera.ec/">
 				<i class="fa fa-facebook" aria-hidden="true"></i>
 			</a>
@@ -56,7 +56,7 @@
 				<i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
 			</a>
 		</div>
-		<div class="language-container col-xs-6 col-sm-6 col-md-4 row-flex align-items-center justify-content-end">
+		<div class="language-container col-xs-6 col-sm-4 col-md-4 row-flex align-items-center justify-content-end">
 			<span class="row-flex align-items-end" >Idioma</span>
 			<span class="row-flex" style="font-size:36px;cursor:pointer;">ESP</span>
 			<span class="row-flex" style="font-size:36px;cursor:pointer;">ENG</span>
@@ -69,10 +69,9 @@
 				<div class="logo-container"></div>
 			  </div>
 			</div>
-			<div class="principal-bar">
-				<div class="row-flex align-items-center justify-content-center">
-					<a class="btn-custom" href="./granos.html">Granos Secos</a>
-				</div>
+			<div id="buttons_bar" class="text-center">
+				<a class="btn-custom" href="./granos.html" style="margin-right: 10%">Granos Secos</a>					
+				<span class="btn-custom">Granos Tiernos</span>
 			</div>
 			<div class="description">
 				<div class="title">Granos Tiernos</div>
@@ -89,26 +88,29 @@
 					<div class="col-xs-6">
 						<img class="image-pic" src="./images/granos tiernos/Frejol-Rojo.png"></img>
 						<div class="image-title text-center">Frejol Rojo Bol&oacute;n</div>
-						<div class="text-center"><b>PESO NETO: 425G</b></div>
+						<div class="product-value text-center"><b>PESO NETO: 425 G</b></div>
 					</div>
 					<div class="col-xs-6 ">
 						<img class="image-pic" src="./images/granos tiernos/Garbanzo.png"></img>
 						<div class="image-title text-center">Garbanzos</div>
-						<div class="text-center"><b>PESO NETO: 425G</b></div>
+						<div class="product-value text-center"><b>PESO NETO: 425 G</b></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="procesados-main hidden-sm-down">
+	<div class="procesados-main hidden-xs">
 		<div class="principal-body">
 			<div class="row banner-container">
 				<div class="principal-body-procesados-corner col-md-4"></div>
 				<div class="principal-body-procesados col-md-8"></div>
 			</div>
 			<div class="row-floating buttons-container column-flex justify-content-center">
-				<div class="institucional-container column-flex justify-content-space-between">
-					<a class="btn-custom" href="./granos.html">Granos Secos</a>
+				<div class="institucional-container column-flex justify-content-space-between " style="margin-top: 20%">
+					<a class="btn-custom row-flex align-items-center justify-content-center" href="./granos.html">Granos Secos</a>
+				</div>
+				<div class="institucional-container column-flex justify-content-space-between" style="margin-top: 10%">
+					<span class="btn-custom row-flex align-items-center justify-content-center">Granos Tiernos</span>
 				</div>
 			</div>
 			<div class="logo-container"></div>
@@ -124,19 +126,22 @@
 			<div class="row product-container">
 				<div class="product-list">
 					<h1 class="subtitle">Lista de Productos</h1>
-					<div class="product-description col-md-12">
-						<div class="col-md-offset-4 col-md-2">
+					<div class="product-description">
+						<div class="col-sm-offset-4 col-sm-2 col-md-offset-4 col-md-2">
 							<img class="image-pic" src="./images/granos tiernos/Frejol-Rojo.png"></img>
 							<div class="image-title text-center">Frejol Rojo Bol&oacute;n</div>
-							<div class="text-center"><b>PESO NETO: 425G</b></div>
+							<div class="product-value text-center"><b>PESO NETO: 425 G</b></div>
 						</div>
-						<div class="col-md-2 ">
+						<div class="col-sm-2 col-md-2">
 							<img class="image-pic" src="./images/granos tiernos/Garbanzo.png"></img>
 							<div class="image-title text-center">Garbanzos</div>
-							<div class="text-center"><b>PESO NETO: 425G</b></div>
+							<div class="product-value text-center"><b>PESO NETO: 425 G</b></div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div id="volver" class="col-sm-11 col-md-11 text-right">
+				<a href="./index.html">Volver</a>
 			</div>
 		</div>
 			

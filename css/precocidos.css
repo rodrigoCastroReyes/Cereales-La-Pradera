@@ -1,17 +1,11 @@
 	
 @media(max-width: 767px) {
 	.principal-body-procesados{
-		height: 100%;
 		background-image:url('../images/procesados.png');
-		background-position: center 100%;
-		background-size: 100% 60%; 
 	}
 
 	.logo-container{
-		width: 100%;
 		background-image:url('../images/logoPortada.png');
-		background-size: 100% 100%; 
-		height: 50%;
 	}
 	
 }
@@ -21,16 +15,10 @@
 	
 	.principal-body-procesados{
 		background-image:url('../images/precocido.png');
-		background-position: center;
-		height: 100%;
-		background-size: 100% 100%; 
 	}
 	
 	.principal-body-procesados-corner{
 		background-image:url('../images/precocidos.png');
-		background-position: bottom;
-		height: 100%;
-		background-size: 100% 240%; 
 	}
 
 	
