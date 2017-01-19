@@ -16,8 +16,9 @@ html,body{
 
 .principal-mision{
 	position: relative;
-	height: 100%;
+	height: 45%;
 	width: 100%;
+	margin-top: 175px;
 }
 
 .row{
@@ -26,7 +27,8 @@ html,body{
 }
 
 .principal-mision-logo {
-	position: relative;
+	position: absolute;
+	top: 0;
     background-image: url('../images/logoPortada.png');
     background-size: 100% 100%;
     height: 35%;
@@ -35,13 +37,13 @@ html,body{
 }
 
 .principal-mision-slider{
-	height: 35%;
+	height: 75%;
 	padding: 0px;
-	margin-top: -10%;
+	
 }
 
 .principal-mision-buttons{
-	height: 20%;
+	height: 25%;
 	background-color: #f07d1d;
 }
 
@@ -64,23 +66,25 @@ html,body{
 }
 
 .principal-section{
-	height: 100%;
+	height: 65%;
 }
 
 .principal-section>section{
 	height: 100%;
 	margin-top: 20px;
 	margin-bottom: 5px;
+	padding: 0px 25px;
 }
 
 .principal-section-title{
 	color: #e70025;
 	font-family: 'Malbeck-Regular';
-	font-size: 36px;
+	font-size: 50px;
+	margin: 0px;
 }
 
 .principal-section-paragraph{
-	font-size: 24px;
+	font-size: 24pprincix;
 }
 
 img {
@@ -101,14 +105,32 @@ img {
     background-color: rgba(245,154,55,0.8);
 }
 
-.btn-custom{
-	width: 150px;
-    margin-right: 10px;
-    height: 85px;
-}
-
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+
+.btn-custom{
+	width: 100px;
+	margin-right: 10px;
+    height: 50px;
+    font-size: 32px;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.principal-section-back{
+    color: #e70025;
+    font-family: 'cabana';
+    font-size: 50px;
+    position: absolute;
+   	bottom: -45px;
+    right: 20px
+}
+
+.principal-section-back:hover{
+	text-decoration: none; /* no underline */
+	color:#f44336;
+	font-weight: bold;
 }
 
 /* Extra Small Devices, Phones */ 
@@ -138,6 +160,7 @@ img {
 		height: 45%;
 		padding: 0px;
 		width: 100%;
+		margin: 0px;
 	}	
 
 	.principal-section{
@@ -169,8 +192,7 @@ img {
 	.side-bar-image{
 		height: 45%;
     	background-size: cover;
-   		background-position: center;
-   		background-image:url('../images/calidad.jpg');
+   		background-image:url('../images/mision/FotoMain.png');
 	}
 
 	.side-bar-image > div{
@@ -197,16 +219,46 @@ img {
 		width: 140px;
 		height: 70px;
 		margin: 10px;
-	}
-
-	.btn-custom{
 		box-shadow: none;
+		text-shadow: none;
 	}
 
 	.principal-section-title{
 		font-size: 60px;
 	}
+
+	.logo-container-mision{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 190px;
+		height: 100px;
+		background-image:url('../images/logoPortada.png');
+    	background-size: 100% 100%; 
+	}
+
+	.btn-custom{
+		width: 150px;
+	    margin-right: 10px;
+	    height: 85px;
+	    font-size: 42px;
+	}
+
+	.principal-section-title{
+		color: #e70025;
+		font-family: 'Malbeck-Regular';
+		font-size: 50px;
+		margin: 0px;
+	}
+
+
+	.principal-section-back{
+		bottom: 10%;
+	    right: 5%;
+	}
+
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
