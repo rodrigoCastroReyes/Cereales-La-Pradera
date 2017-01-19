@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom_elements.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-	<link rel="stylesheet" type="text/css" href="css/granos.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/product_lists.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/harinas.css">
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -69,10 +69,9 @@
 				<div class="logo-container"></div>
 			  </div>
 			</div>
-			<div class="principal-bar">
-				<div class="row-flex align-items-center justify-content-center">
-					<a class="btn-custom" href="./harinas free.html">Harinas Gluten Free</a>
-				</div>
+			<div id="buttons_bar" class="text-center">
+				<span class="btn-custom" style="margin-right: 10%">Harinas</span>					
+				<a class="btn-custom" href="./harinas free.html">Harinas Gluten Free</a>
 			</div>
 			<div class="description">
 				<div class="title">Harinas</div>
@@ -85,36 +84,83 @@
 			<div class="product-list">
 				<h1 class="subtitle">Lista de Productos</h1>
 				<div class="product-description col-xs-11">
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
-						<div class="image-title text-center">Almid&oacute;n de yuca</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
+							<div class="image-title text-center">Almid&oacute;n de Yuca</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Avena-Molida.png"></img>
+							<div class="image-title text-center">Avena Molida pradera</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6 ">
-						<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
-						<div class="image-title text-center">Avena Molida Pradera</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
-						<br>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-Arveja.png"></img>
+							<div class="image-title text-center">Harina de Arveja</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-haba.png"></img>
+							<div class="image-title text-center">Harina de haba</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/harinas/Harina-de-Arveja.png"></img>
-						<div class="image-title text-center">Harina de Arverja</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-maiz-calentado.png"></img>
+							<div class="image-title text-center">Harina de ma&iacute;z</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-platano.png"></img>
+							<div class="image-title text-center">Harina de pl&aacute;tano</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/harinas/Harina-de-haba.png"></img>
-						<div class="image-title text-center">Harina de Haba</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-trigo-fortificada.png"></img>
+							<div class="image-title text-center">Harina fortificada</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-de-trigo.png"></img>
+							<div class="image-title text-center">Harina Integral</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/harinas/Harina-de-maiz-calentado.png"></img>
-						<div class="image-title text-center">Harina de Ma&iacute;z</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Harina-Morada.png"></img>
+							<div class="image-title text-center">Harina morada</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Machica.png"></img>
+							<div class="image-title text-center">M&aacute;chica</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/harinas/Maicena.png"></img>
+							<div class="image-title text-center">Maicena Pradera</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,8 +173,11 @@
 				<div class="principal-body-procesados col-md-8"></div>
 			</div>
 			<div class="row-floating buttons-container column-flex justify-content-center">
-				<div class="institucional-container column-flex justify-content-space-between">
-					<a class="btn-custom" href="./harinas free.html">Harinas Gluten Free</a>
+				<div class="institucional-container column-flex justify-content-space-between " style="margin-top: 20%">
+					<span class="btn-custom row-flex align-items-center justify-content-center">Harinas</span>
+				</div>
+				<div class="institucional-container column-flex justify-content-space-between" style="margin-top: 10%">
+					<a id="harina-free" class="btn-custom row-flex align-items-center justify-content-center" href="./harinas free.html">Harinas Gluten Free</a>
 				</div>
 			</div>
 			<div class="logo-container"></div>
@@ -144,37 +193,81 @@
 				<div class="product-list">
 					<h1 class="subtitle">Lista de Productos</h1>
 					<div class="product-description col-md-12">
-						<div class="col-md-offset-1 col-md-2">
-							<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
-							<div class="image-title text-center">Almid&oacute;n de yuca</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
+								<div class="image-title text-center">Almid&oacute;n de Yuca</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Avena-Molida.png"></img>
+								<div class="image-title text-center">Avena Molida pradera</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-Arveja.png"></img>
+								<div class="image-title text-center">Harina de Arveja</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-haba.png"></img>
+								<div class="image-title text-center">Harina de haba</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-maiz-calentado.png"></img>
+								<div class="image-title text-center">Harina de ma&iacute;z</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
-						<div class="col-md-2 ">
-							<img class="image-pic" src="./images/harinas/Almidon-de-yuca.png"></img>
-							<div class="image-title text-center">Avena Molida Pradera</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
-							<br>
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-platano.png"></img>
+								<div class="image-title text-center">Harina de pl&aacute;tano</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-trigo-fortificada.png"></img>
+								<div class="image-title text-center">Harina fortificada</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-de-trigo.png"></img>
+								<div class="image-title text-center">Harina integral</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Harina-Morada.png"></img>
+								<div class="image-title text-center">Harina morada</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/harinas/Machica.png"></img>
+								<div class="image-title text-center">M&aacute;chica</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
-						<div class="col-md-2">
-							<img class="image-pic" src="./images/harinas/Harina-de-Arveja.png"></img>
-							<div class="image-title text-center">Harina de Arverja</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/harinas/Maicena.png"></img>
+								<div class="image-title text-center">Maicena Pradera</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
-						<div class="col-md-2">
-							<img class="image-pic" src="./images/harinas/Harina-de-haba.png"></img>
-							<div class="image-title text-center">Harina de Haba</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
-						</div>
-						<div class="col-md-2 ">
-							<img class="image-pic" src="./images/harinas/Harina-de-maiz-calentado.png"></img>
-							<div class="image-title text-center">Harina de Ma&iacute;z</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
-						</div>
+					</div>
+					<div id="volver" class="col-sm-11 col-md-11 text-right">
+						<a href="./index.html">Volver</a>
 					</div>
 				</div>
 			</div>

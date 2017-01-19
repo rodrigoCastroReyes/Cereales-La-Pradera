@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom_elements.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-	<link rel="stylesheet" type="text/css" href="css/granos.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/product_lists.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/precocidos.css">
 	<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -69,10 +69,9 @@
 				<div class="logo-container"></div>
 			  </div>
 			</div>
-			<div class="principal-bar">
-				<div class="row-flex align-items-center justify-content-center">
-					<a class="btn-custom" href="./precocidos.html">Precocidos</a>
-				</div>
+			<div id="buttons_bar" class="text-center">
+				<a class="btn-custom" href="./precocidos.html" style="margin-right: 10%">Precocidos</a>					
+				<span class="btn-custom">Procesados</span>
 			</div>
 			<div class="description">
 				<div class="title">Procesados</div>
@@ -86,24 +85,83 @@
 			<div class="product-list">
 				<h1 class="subtitle">Lista de Productos</h1>
 				<div class="product-description col-xs-11">
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/procesados/Arroz-de-cebada.png"></img>
-						<div class="image-title text-center">Arroz de Cebada</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Arroz-de-cebada.png"></img>
+							<div class="image-title text-center">Arroz de Cebada</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Avena-en-hojuelas.png"></img>
+							<div class="image-title text-center">Avena la pradera</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6 ">
-						<img class="image-pic" src="./images/procesados/Avena-en-hojuelas.png"></img>
-						<div class="image-title text-center">Avena La Pradera</div>
-						<div class="text-center"><b>PACK X 250G</b></div>
-						<div class="text-center"><b>PACK X 500G</b></div>
-						<br>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/hojuelon-2.png"></img>
+							<div class="image-title text-center">Hojuel&oacute;n Avena</div>
+							<div class="product-value text-center"><b>PACK X 300 G</b></div>
+							<div class="product-value text-center"><b>PACK X 850 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Cebada-Perlada.png"></img>
+							<div class="image-title text-center">Cebada Perlada</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<img class="image-pic" src="./images/procesados/Hojuelon.png"></img>
-						<div class="image-title text-center">Hojuelón Avena</div>
-						<div class="text-center"><b>PACK X 300G</b></div>
-						<div class="text-center"><b>PACK X 850G</b></div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Cebada-perlada-cortada.png"></img>
+							<div class="image-title text-center">Cebada Perlada Cortada</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Morocho-fino.png"></img>
+							<div class="image-title text-center">Morocho Fino</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Morocho-partido.png"></img>
+							<div class="image-title text-center">Morocho partido</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Morocho-trillado.png"></img>
+							<div class="image-title text-center">Morocho Trillado</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Pinol.png"></img>
+							<div class="image-title text-center">Pinol</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Polenta.png"></img>
+							<div class="image-title text-center">Polenta</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<img class="image-pic" src="./images/procesados/Semola.png"></img>
+							<div class="image-title text-center">Semola Pradera</div>
+							<div class="product-value text-center"><b>PACK X 250 G</b></div>
+							<div class="product-value text-center"><b>PACK X 500 G</b></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -116,8 +174,11 @@
 				<div class="principal-body-procesados col-md-8"></div>
 			</div>
 			<div class="row-floating buttons-container column-flex justify-content-center">
-				<div class="institucional-container column-flex justify-content-space-between">
-					<a class="btn-custom" href="./precocidos.html">Precocidos</a>
+				<div class="institucional-container column-flex justify-content-space-between " style="margin-top: 20%">
+					<a class="btn-custom row-flex align-items-center justify-content-center" href="./precocidos.html">Precocidos</a>
+				</div>
+				<div class="institucional-container column-flex justify-content-space-between" style="margin-top: 10%">
+					<span class="btn-custom row-flex align-items-center justify-content-center">Procesados</span>
 				</div>
 			</div>
 			<div class="logo-container"></div>
@@ -133,27 +194,83 @@
 			<div class="row product-container">
 				<div class="product-list">
 					<h1 class="subtitle">Lista de Productos</h1>
-					<div class="product-description col-md-12">
-						<div class="col-md-offset-3 col-md-2">
-							<img class="image-pic" src="./images/procesados/Arroz-de-cebada.png"></img>
-							<div class="image-title text-center">Arroz de Cebada</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
+					<div class="product-description">
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/procesados/Arroz-de-cebada.png"></img>
+								<div class="image-title text-center">Arroz de Cebada</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Avena-en-hojuelas.png"></img>
+								<div class="image-title text-center">Avena la pradera</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/hojuelon-2.png"></img>
+								<div class="image-title text-center">Hojuel&oacute;n Avena</div>
+								<div class="product-value text-center"><b>PACK X 300 G</b></div>
+								<div class="product-value text-center"><b>PACK X 850 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Cebada-Perlada.png"></img>
+								<div class="image-title text-center">Cebada Perlada</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Cebada-perlada-cortada.png"></img>
+								<div class="image-title text-center">Cebada Perlada Cortada</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
-						<div class="col-md-2 ">
-							<img class="image-pic" src="./images/procesados/Avena-en-hojuelas.png"></img>
-							<div class="image-title text-center">Avena La Pradera</div>
-							<div class="text-center"><b>PACK X 250G</b></div>
-							<div class="text-center"><b>PACK X 500G</b></div>
-							<br>
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/procesados/Morocho-fino.png"></img>
+								<div class="image-title text-center">Morocho Fino</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Morocho-partido.png"></img>
+								<div class="image-title text-center">Morocho partido</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Morocho-trillado.png"></img>
+								<div class="image-title text-center">Morocho Trillado</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Pinol.png"></img>
+								<div class="image-title text-center">Pinol</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<img class="image-pic" src="./images/procesados/Polenta.png"></img>
+								<div class="image-title text-center">Polenta</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
-						<div class="col-md-2">
-							<img class="image-pic" src="./images/procesados/Hojuelon.png"></img>
-							<div class="image-title text-center">Hojuelón Avena</div>
-							<div class="text-center"><b>PACK X 300G</b></div>
-							<div class="text-center"><b>PACK X 850G</b></div>
+						<div class="col-sm-12 col-md-12">
+							<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2">
+								<img class="image-pic" src="./images/procesados/Semola.png"></img>
+								<div class="image-title text-center">Semola Pradera</div>
+								<div class="product-value text-center"><b>PACK X 250 G</b></div>
+								<div class="product-value text-center"><b>PACK X 500 G</b></div>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div id="volver" class="col-sm-11 col-md-11 text-right">
+					<a href="./index.html">Volver</a>
 				</div>
 			</div>
 		</div>

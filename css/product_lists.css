@@ -1,0 +1,242 @@
+.procesados-main{
+		height: 100%;
+	}
+
+.principal-body{
+	margin-right: auto;
+	margin-left: auto;
+	height: 85%;
+	position: relative;
+}
+
+.product-description{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 0;
+}
+
+#scrollUp-active{
+	visibility: hidden;
+}
+
+a:active{
+	color: white;
+	text-decoration: none;
+}
+
+img{
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+	
+@media(max-width: 767px) {
+	
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	/* Text link style */
+	
+	#scrollUp {
+		bottom: 20px;
+		right: 20px;
+		font-family: 'cabana';
+		font-size: 25px;
+		color: #E70025;
+	}
+
+	#buttons_bar{
+		background-color: #f07d1d;
+	}
+	
+	.principal-body-procesados{
+		height: 100%;
+		background-image:url('../images/procesados.png');
+		background-position: center 100%;
+		background-size: 100% 70%; 
+	}
+
+	.logo-container{
+		width: 100%;
+		background-image:url('../images/logoPortada.png');
+		background-size: 100% 100%; 
+		height: 40%;
+	}
+
+	/*Bootstrap overrides*/
+	.picture_row{
+		width: 100%;
+		height: 60%;
+	}
+
+	.btn-custom{
+		margin: 3% 0 3% 0;
+		font-size: 35px;
+		padding: 1% 2% 1% 2%;
+	}
+
+	.description{
+		margin-top: 40px;
+	}
+
+	.title{
+		margin: 0 0 5px 10px;
+		font-family: 'awesome';
+		color: #e70025;
+		font-size: 50px;
+	}
+
+	.description-info{
+		font-size: 18px;
+		margin: 0 20px 0 20px;
+	}
+	
+	.product-value{
+		font-size: 10px;
+	}
+	
+	.product-list{
+		margin-top: 30px;
+	}
+
+	.subtitle{
+		margin-left: 20px;
+		font-family: 'cabana';
+		font-size: 50px;
+		color: #E70025;
+	}
+
+	.image-pic{
+		display: block;
+		margin: auto;
+		height: 180px;
+	}
+
+	.image-title{
+		font-family: 'cabana';
+		font-size: 25px;
+		color: #E70025;
+		margin-top: -5%;
+	}
+
+}
+
+@media(min-width: 768px){
+
+	html,body{
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+	.row-floating{
+		position: absolute; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 33%; /* Full width */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgba(245, 154, 55, 0.8);
+	}
+
+	.principal-body-procesados{
+		background-image:url('../images/granos_pag.png');
+		background-position: center;
+		height: 100%;
+		background-size: 100% 100%; 
+	}
+
+	.principal-body-procesados-corner{
+		background-image:url('../images/granos_pag.png');
+		background-position: center;
+		height: 100%;
+		background-size: 200% 100%; 
+	}
+	.institucional-container{
+		padding: 0px 80px 0px 80px;
+	}
+	.title{
+		margin: 40px 0 0 0;
+		font-family: 'awesome';
+		color: #e70025;
+		font-size: 55px;
+		text-align: center;
+	}
+	.description-info{
+		font-size: 25px;
+		margin: 0 100px 0 100px;
+		text-align: center;
+	}
+
+	.btn-custom{
+		font-size: 45px;
+	}
+	
+	.logo-container{
+		position: absolute;
+		left: 82%;
+		top: 20px;
+		z-index: 1;
+		background-image:url('../images/logoPortada.png');
+		background-position: center;
+		background-size: cover;
+		height: 100px;
+		width: 15%; /* Full width */
+		margin-right: 20px;
+	}
+	
+	.product-list{
+		width: 100%;
+	}
+	.subtitle{
+		text-align: center;
+		font-family: 'cabana';
+		font-size: 56px;
+		color: #E70025;
+	}
+	.image-pic{
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 280px;
+	}
+
+	.image-title{
+		font-family: 'cabana';
+		font-size: 40px;
+		color: #E70025;
+		margin-top: -10%;
+	}
+
+	.buttons-container{
+		height: 50%;
+	}
+
+	.banner-container{
+		height: 50%;
+	}
+
+	.description-container{
+		height: 50%;
+	}
+
+	.product-value{
+		font-size: 14px;
+	}
+	
+	#volver a{
+		font-family: 'cabana';
+		font-size: 36px;
+		color: red;
+	}
+	
+	#volver a:hover{
+	text-decoration: none; /* no underline */
+	color:#f44336;
+	font-weight: bold;
+}
+}
+
