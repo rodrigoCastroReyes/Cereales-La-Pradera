@@ -9,13 +9,6 @@ html,body{
 	margin: 0px;
 }
 
-.principal-body{
-	position: relative;
-	margin-right: auto;
-    margin-left: auto;
-    padding:0px;
-    height: 95%;
-}
 
 /*Floating container*/
 .principal-body-calidad{
@@ -27,7 +20,7 @@ html,body{
 .principal-body-calidad h1{
 	color: white;
 	padding: 25px 0px 0px 50px;
-	font-family: 'awesome';
+	font-family: 'Malbeck-Regular';
 	font-size: 32px;
 }
 
@@ -36,45 +29,19 @@ html,body{
 	position: relative;
 }
 
-.principal-body-volver a{
-	position: absolute;
-	bottom: 25px;
-	right: 0;
-	z-index: 1000;
-	color: #e70025;
-	font-family: 'cabana';
-	font-size: 36px;
-	cursor: pointer;
-	padding: 40px 20px 40px 0px;
-}
-
 .principal-body-volver a:hover{
 	text-decoration: none; /* no underline */
 	color:#f44336;
 	font-weight: bold;
 }
 
-.principal-body-slider{
-	position: absolute; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    padding: 45px 50px 100px 50px;
-    left: 0;
-    top: 0;
-}
-
-
-
 #myCarousel{
-	height: 100%;
+	width: 100%;
 	margin: 0px;
 }
 
 .carousel-inner{
 	height: 100%;
-
 }
 
 .carousel-indicators{
@@ -102,41 +69,139 @@ img{
     background-color: #e70025;
 }
 
-.carousel-inner > .item > img{
-   width:100%;
-   height:450px;
+@media only screen and (max-width: 767px) {
+	.logo-container{
+		width: 100%;
+		background-image:url('../images/logoPortada.png');
+		background-size: 100% 100%; 
+		height: 180px;
+	}
+	
+	.picture_row{
+		width: 100%;
+		height: 47%;
+		margin:0;
+		padding:0;
+	}
+	
+	.principal-body-calidad{
+		height: 660px;
+		width: 100%;
+		background-color: rgba(245,154,55,1);
+		margin:0;
+		padding:0;
+		overflow: hidden;
+		
+	}
+	
+	.principal-body-calidad h1{
+		font-size: 50px;
+		padding:0;
+	}
+	
+	.principal-body{
+		position: relative;
+		padding-left:0;
+		height: 95%;
+		width: 100%;
+	}
+	
+	#principal-calidad{
+		padding: 0;
+	}
+	.calidad-container-title{
+		position: relative;
+		padding: 0;
+		margin:0;
+		bottom: 0;
+		top: 180px;
+		color: white;
+	}
+	
+	.carousel-inner > .item > img{
+	   width:100%;
+	   height:400px;
+	}
+	
+	.principal-body-slider{
+		position: absolute; /* Stay in place */
+	    z-index: 100; /* Sit on top */
+	    width: 102%; /* Full width */
+	    height: 400px; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    top: 235px;  /* position the top  edge of the element at the middle of the parent */
+    	left: 3%; /* position the left edge of the element at the middle of the parent */
+		margin:0;
+		padding:0;
+
+	}
+	.principal-body-volver{
+		text-align: center;
+	}
+	.principal-body-volver a{
+		color: #e70025;
+		font-family: 'cabana';
+		font-size: 40px;
+		cursor: pointer;
+
+	}
 }
 
 @media only screen and (min-width : 768px){
-
+	.principal-body{
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		padding:0px;
+		height: 95%;
+	}
+	
+	.logo-container{
+		position: absolute;
+		left: 77%;
+		top: 20px;
+		z-index: 1;
+		background-image:url('../images/logoPortada.png');
+		background-position: center;
+		background-size: cover;
+		height: 100px;
+		width: 15%; /* Full width */
+	}
+	
 	.principal-body-calidad h1{
 		color: white;
-		padding: 25px 0px 0px 50px;
-		font-family: 'awesome';
-		font-size: 42px;
+		padding: 36px 0px 0px 19%;
+		font-family: 'Malbeck-Regular';
+		font-size: 80px;
 	}
 
 	.principal-body-volver a{
 		position: absolute;
 		bottom: 0;
-		right: 0;
+		right: 28%;
 		z-index: 1000;
 		color: #e70025;
 		font-family: 'cabana';
-		font-size: 42px;
+		font-size: 50px;
 		padding: 80px 50px 40px 0px;
 		cursor: pointer;
 	}
 
+	.carousel-inner > .item > img{
+	   width:100%;
+	   height:550px;
+	}
+	
 	.principal-body-slider{
 		position: absolute; /* Stay in place */
 	    z-index: 100; /* Sit on top */
-	    width: 100%; /* Full width */
-	    height: 100%; /* Full height */
+	    width: 85%; /* Full width */
+	    height: 550px; /* Full height */
 	    overflow: auto; /* Enable scroll if needed */
-	    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    	left: 50%; /* position the left edge of the element at the middle of the parent */
-    	transform: translate(-50%, -50%);
+	    top: 17%;  /* position the top  edge of the element at the middle of the parent */
+    	left: 8%; /* position the left edge of the element at the middle of the parent */
+		margin:0;
+		padding:0;
 	}
 
 }
