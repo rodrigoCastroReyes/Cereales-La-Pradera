@@ -1,112 +1,190 @@
-#scrollUp-active{
-	visibility: hidden;
-}
-
-@media only screen and (min-width : 768px){
-	.history-board{
-	overflow: auto;
-	height: 300px;
-	}
-
-	.subtitle{
-		margin-bottom: -5px;
-		font-family: 'cabana';
-		font-size: 50px;
-		color: #E70025;
-	}
-}
-
-	
-@media only screen and (max-width : 767px) {
 html,body{
 	width: 100%;
 	height: 100%;
+	overflow-x: visible;
+	overflow-y: visible; 
 }
 
-	/* Text link style */
-	#scrollUp {
-		bottom: 20px;
-		right: 20px;
-		font-family: 'cabana';
-		font-size: 25px;
-		color: #E70025;
-	}
-	
-	.principal-body-section{
-		margin-top: 0;
-	}
-	
-	.principal-body-historia{
+.principal-body{
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	height: 85%;
+}
+
+.btn-custom{
+	font-size: 32px;
+	padding: 0px;
+	text-shadow:none;
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+}
+
+.historia-logo{
+	position: absolute;
+	top: 0;
+    background-image: url('../images/logoPortada.png');
+    background-size: 100% 100%;
+    height: 225px;
+    width: 100%;
+    z-index: 1; /* Sit on top */
+}
+
+.historia-body{
+	height: 75%;
+	margin-top: 155px;
+}
+
+.historia-title{
+	padding: 0;
+	font-family: 'Malbeck-Regular';
+	color: #e70025;
+	font-size: 60px;
+}
+
+.historia-subtitle{
+	font-family: 'cabanna';
+	font-family: 'cabana';
+	font-size: 80px;
+	color: #E70025;
+	width: 100%;
+}
+
+.historia-content{
+	position: relative;
+	padding: 0px 20px;
+	padding-top: 40px;
+	height: 110%;
+}
+
+.historia-active{
+	display: block;
+}
+
+.historia-desactive{
+	display: none;
+}
+
+.historia-gallery{
+	background-image: url("../images/historia/Foto1.png");
+	background-position: center;
+	height: 75%;
+}
+
+.institucional-container{
+	height: 100%;
+}
+
+.historia-next{
+	bottom: 0;
+    right: 45%;
+	position: absolute;
+	width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #f07d1d;
+    cursor: pointer;
+}
+
+.row{
+	height: 100%;
+}
+
+.historia-back{
+	color: #e70025;
+    font-family: 'cabana';
+    font-size: 50px;
+    position: absolute;
+   	bottom: -15px;
+    right: 20px
+}
+
+.historia-back:hover{
+	text-decoration: none; /* no underline */
+	color:#f44336;
+	font-weight: bold;
+}
+
+.historia-aside-mobil{
+	height: 25%;
+    overflow: auto;
+    background-color: #f07d1d;
+}
+
+@media only screen and (min-width : 768px){
+
+	html,body{
+		width: 100%;
 		height: 100%;
-		background-image:url('../images/historia.png');
-		background-position: center 100%;
-		background-size: 148% 55%; 
 	}
 
-	.logo-container{
-		width: 100%;
-		background-image:url('../images/logoPortada.png');
-		background-size: 100% 100%; 
-		height: 56%;
+	.principal-body{
+		height: 92%;
 	}
 
-
-	/*Bootstrap overrides*/
-	.picture_row{
-		width: 100%;
-		height: 70%;
+	.institucional-container{
+		padding-bottom: 100px;
 	}
-	.principal-body-volver{
-		margin-bottom: -38px;
-		font-family: 'cabana';
-		font-size: 35px;
+
+	.institucional-container > a{
+		margin: 5px 0px 10px 0px;
+	    text-align: center;
+	    width: 190px;
+	    height: 60px;
 	}
 
 	.btn-custom{
-		margin-right: 7px;
-		margin-left: 7px;
+		font-size: 42px;
+		padding: 0px;
+		text-shadow:none;
 	}
 
-	.location-input{
-		background-color: #F6A1AF;
-		height: 60%;
-		box-shadow: -1px -1px black;
+	.historia-aside {
+	    height: 100%;
+	    overflow: auto;
+	    background-color: #f07d1d;
+	    opacity: 0.85;
 	}
-	
-	.title{
-		padding: 0;
-		font-family: 'awesome';
+
+	.historia-gallery{
+		background-image: url("../images/historia/Foto1.png");
+		background-position: center;
+		height: 50%;
+	}
+
+	.historia-body{
+		height: 100%;
+		margin: 0px;
+	}
+
+	.historia-content{
+		padding: 20px 0px;
+		height: 50%;
+	}
+
+	.historia-next{
+		bottom: 20%;
+		right: 40%;
+		position: absolute;
+		width: 0; 
+		height: 0; 
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-top: 30px solid #f07d1d;
+		cursor: pointer;
+	}
+
+	.historia-back{
 		color: #e70025;
-		font-size: 40px;
+	    font-family: 'cabana';
+	    font-size: 50px;
+	    position: absolute;
+	   	bottom: 30px;
+	    right: 20px
 	}
 
-	.principal-body-paragraph{
-		font-size: 18px;
-		margin: -10px 0 30px 0;
-	}
-
-	.product-list{
-		margin-top: 30px;
-	}
-
-	.subtitle{
-		margin-top: -20px;
-		font-family: 'cabana';
-		font-size: 50px;
-		color: #E70025;
-	}
-
-	.image-pic{
-		display: block;
-		margin: auto;
-		height: 180px;
-	}
-
-	.image-title{
-		font-family: 'cabana';
-		font-size: 28px;
-		color: #E70025;
-	}
-	
 }
-
