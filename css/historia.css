@@ -14,6 +14,7 @@ html,body{
 	height: 85%;
 }
 
+
 .btn-custom{
 	font-size: 32px;
 	padding: 0px;
@@ -22,6 +23,21 @@ html,body{
 	height: 50px;
 	margin: 10px;
 }
+
+.subtitle{
+	margin-bottom: -5px;
+	font-family: 'cabana';
+	font-size: 50px;
+	color: #E70025;
+}
+
+#video-container{
+	margin-top: 5%;
+	margin-left: 10%;
+	width: 80%;
+	height: 75%;
+}
+
 
 .historia-logo{
 	position: absolute;
@@ -116,6 +132,32 @@ html,body{
 }
 
 @media only screen and (min-width : 768px){
+	
+	#video-container{
+		margin-top: 45%;
+		margin-left: 5%;
+		width: 90%;
+		height: 40%;
+	}
+	/* Text link style */
+	#scrollUp {
+		bottom: 20px;
+		right: 20px;
+		font-family: 'cabana';
+		font-size: 25px;
+		color: #E70025;
+	}
+	
+	.principal-body-section{
+		margin-top: 0;
+	}
+	
+	.principal-body-historia{
+		height: 100%;
+		background-image:url('../images/historia.png');
+		background-position: center 100%;
+		background-size: 148% 55%; 
+	}
 
 	html,body{
 		width: 100%;

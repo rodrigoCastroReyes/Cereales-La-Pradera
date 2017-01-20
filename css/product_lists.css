@@ -123,7 +123,9 @@ img{
 		font-family: 'cabana';
 		font-size: 25px;
 		color: #E70025;
-		margin-top: -5%;
+	}
+	.container-image{
+		margin-top: 5%;
 	}
 
 }
@@ -177,8 +179,6 @@ img{
 		text-align: center;
 	}
 
-
-	
 	.logo-container{
 		position: absolute;
 		left: 82%;
@@ -204,15 +204,18 @@ img{
 	.image-pic{
 		display: block;
 		margin: auto;
-		width: 100%;
-		height: 280px;
+		width: 75%;
+		height: 200px;
 	}
-
+	
+	.container-image{
+		margin-top: 1%;
+	}
+	
 	.image-title{
 		font-family: 'cabana';
 		font-size: 40px;
 		color: #E70025;
-		margin-top: -10%;
 	}
 
 	.buttons-container{
@@ -233,8 +236,9 @@ img{
 	
 	#volver a{
 		font-family: 'cabana';
-		font-size: 36px;
+		font-size: 50px;
 		color: red;
+		cursor: pointer;
 	}
 	
 	#volver a:hover{
