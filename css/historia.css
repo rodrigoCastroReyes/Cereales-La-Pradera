@@ -31,11 +31,12 @@ html,body{
 	color: #E70025;
 }
 
+	
 #video-container{
-	margin-top: 5%;
-	margin-left: 10%;
-	width: 80%;
-	height: 75%;
+	margin-top: 45%;
+	margin-left: 5%;
+	width: 90%;
+	height: 40%;
 }
 
 
@@ -134,11 +135,12 @@ html,body{
 @media only screen and (min-width : 768px){
 	
 	#video-container{
-		margin-top: 45%;
-		margin-left: 5%;
-		width: 90%;
-		height: 40%;
-	}
+	margin-top: 5%;
+	margin-left: 10%;
+	width: 80%;
+	height: 75%;
+}
+
 	/* Text link style */
 	#scrollUp {
 		bottom: 20px;
