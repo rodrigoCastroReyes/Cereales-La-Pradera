@@ -1,7 +1,8 @@
 	
 @media(max-width: 767px) {
 	.principal-body-procesados{
-		background-image:url('../images/procesados.png');
+		background-image:url('../images/precocidos_banner.png');
+		background-size: cover;
 	}
 
 	.logo-container{

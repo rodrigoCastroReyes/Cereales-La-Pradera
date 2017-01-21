@@ -57,22 +57,22 @@ img{
 	
 	.principal-body-procesados{
 		height: 100%;
-		background-image:url('../images/procesados.png');
+		background-image:url('../images/granos_mobil.png');
 		background-position: center 120%;
-		background-size: 100% 80%; 
+		
 	}
 
 	.logo-container{
 		width: 100%;
 		background-image:url('../images/logoPortada.png');
 		background-size: 100% 100%; 
-		height: 30%;
+		height: 60%;
 	}
 
 	/*Bootstrap overrides*/
 	.picture_row{
 		width: 100%;
-		height: 60%;
+		height: 70%;
 	}
 
 	.btn-custom{
@@ -84,7 +84,7 @@ img{
 	}
 
 	.description{
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 
 	.title{
