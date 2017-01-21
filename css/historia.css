@@ -88,6 +88,8 @@ html,body{
 	background-image: url("../images/historia/Foto1.png");
 	background-position: center;
 	height: 75%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .institucional-container{
@@ -132,7 +134,7 @@ html,body{
 }
 
 @media only screen and (min-width : 768px){
-	
+
 	#video-container{
 		margin-top: 45%;
 		margin-left: 5%;
