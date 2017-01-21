@@ -58,15 +58,15 @@ img{
 	.principal-body-procesados{
 		height: 100%;
 		background-image:url('../images/procesados.png');
-		background-position: center 100%;
-		background-size: 100% 70%; 
+		background-position: center 120%;
+		background-size: 100% 80%; 
 	}
 
 	.logo-container{
 		width: 100%;
 		background-image:url('../images/logoPortada.png');
 		background-size: 100% 100%; 
-		height: 225px;
+		height: 30%;
 	}
 
 	/*Bootstrap overrides*/
