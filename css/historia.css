@@ -1,7 +1,7 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	overflow-x: visible;
+	overflow-x: hidden;
 	overflow-y: visible; 
 }
 
@@ -17,7 +17,7 @@ html,body{
 	font-size: 32px;
 	padding: 0px;
 	text-shadow:none;
-	width: 100px;
+	width: 80px;
 	height: 50px;
 	margin: 10px;
 }
@@ -41,16 +41,18 @@ html,body{
 .historia-logo{
 	position: absolute;
 	top: 0;
+	left: 0;
     background-image: url('../images/logoPortada.png');
     background-size: 100% 100%;
     height: 40%;
     width: 100%;
     z-index: 1; /* Sit on top */
+
 }
 
 .historia-body{
-	height: 75%;
-	margin-top: 40%;
+	height: 80%;
+    margin-top: 30%;
 }
 
 .historia-title{
@@ -86,7 +88,7 @@ html,body{
 .historia-gallery{
 	background-image: url("../images/historia/Foto1.png");
 	background-position: center;
-	height: 75%;
+	height: 80%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -162,6 +164,7 @@ html,body{
 	html,body{
 		width: 100%;
 		height: 100%;
+
 	}
 
 	.principal-body{
