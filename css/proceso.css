@@ -22,6 +22,7 @@ html,body{
 .step-one{
 	position: relative;
 	background-image:url('../images/proceso/FondoAmarillo1.png');
+
 }
 
 .step-two{
@@ -59,6 +60,11 @@ html,body{
 	padding: 20px;
 	text-align: center;
 	margin-bottom: 50px;
+	background-image: url("../images/proceso/Texto1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 25%;
+    background-position: center;
 }
 
 .step-one-productos{
@@ -83,7 +89,12 @@ html,body{
 	font-weight: 600;
 	padding: 20px;
 	text-align: center;
-	margin-left: 20px;
+	background-image: url('../images/proceso/Texto2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 25%;
+    background-position: center;
+
 }
 
 .step-one-campesino{
@@ -121,9 +132,14 @@ html,body{
 	font-weight: 600;
 	padding: 20px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 200px;
 	margin-right: 0px;
 	margin-left: 0px;
+	background-image: url("../images/proceso/texto3.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 25%;
+    background-position: center;
 }
 
 .step-three-machine{
@@ -148,6 +164,11 @@ html,body{
 	text-align: center;
 	margin-top: 60px;
 	margin-left: 40px;
+	background-image: url("../images/proceso/texto4.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 25%;
+    background-position: center;
 }
 
 .step-four-machine{
@@ -170,11 +191,111 @@ html,body{
 	height: 10%;
 	padding-top: 10px;
 	background-color: #e31e2f;
+	
+	
+	text-align: center;
+	vertical-align: center;
+}
+
+.step-four-footer>a{
+	text-decoration: none;
+	color: white;
 	font-family: 'cabana';
 	font-size: 36px;
 	font-weight: 600;
-	color: white;
-	text-align: center;
-	vertical-align: center;
-
 }
+
+.step-four-footer>a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.grano_one,.grano_two,.grano_three,.grano_five{
+	position: absolute;
+	z-index: 10;
+	transition-property: transform;
+    animation-direction: alternate;   
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transform: rotate(-40deg);
+}
+
+.grano_four,.grano_six{
+	position: absolute;
+	z-index: 10;
+	transition-property: transform;
+    animation-direction: alternate;   
+    animation-name: rotate_inverse; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transform: rotate(-40deg);
+}
+
+.grano_one{
+	top: 25%;  /* position the top  edge of the element at the middle of the parent */
+    left: 75%; /* position the left edge of the element at the middle of the parent */
+}
+
+.grano_two{
+	top: 5%;
+    left: 60%;
+}
+
+.grano_three{
+	top: 10%;
+    left: 25%;
+}
+
+.grano_four{
+	top: 15%;
+    left: 40%;
+}
+
+.grano_five{
+	top: 45%;
+	left: 30%;
+}
+
+.grano_six{
+	top: 35%;
+	left: 60%;
+}
+
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    10%  {transform: rotate(10deg);}
+    20%  {transform: rotate(20deg);}
+    30%  {transform: rotate(30deg);}
+    35%  {transform: rotate(40deg);}
+    40%  {transform: rotate(45deg);}
+    50% {transform: rotate(50deg);}
+    60%  {transform: rotate(60deg);}
+    70%  {transform: rotate(65deg);}
+    80%  {transform: rotate(70deg);}
+    90%  {transform: rotate(80deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@keyframes rotate_inverse {
+    0%   {transform: rotate(90deg);}
+    10%  {transform: rotate(80deg);}
+    20%  {transform: rotate(70deg);}
+    30%  {transform: rotate(65deg);}
+    35%  {transform: rotate(60deg);}
+    40%  {transform: rotate(50deg);}
+    50% {transform: rotate(45deg);}
+    60%  {transform: rotate(40deg);}
+    70%  {transform: rotate(30deg);}
+    80%  {transform: rotate(20deg);}
+    90%  {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/*
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}*/
