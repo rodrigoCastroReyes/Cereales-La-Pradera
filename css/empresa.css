@@ -63,9 +63,15 @@ html,body{
     width: 500px;
 }
 
+@media only screen and (max-height:  500px){
 
+    .principal-body-institucional-btns{
+        padding-bottom: 5%;
+    }
 
-@media only screen and (min-width : 768px){
+}
+
+@media only screen and (min-height:  500px) and (min-width : 768px){
 
     html,body{
         width: 100%;
