@@ -50,11 +50,21 @@ html,body{
 .btn-mision,.btn-vision,.btn-historia{
     width: 150px;
     margin: 5px;
-    height: 50px;
+    height: 60px;
+    padding: 15px 32px;
+}
+
+.btn-custom{
+    width: 150px;
+    height: 60px;
 }
 
 .modal-lg{
     width: 500px;
+}
+
+.photo_one{
+    background-image: url("../images/mision/Foto4_mobil.png");
 }
 
 @media only screen and (min-width : 768px){
