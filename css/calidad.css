@@ -1,9 +1,8 @@
 html,body{
 	width: 100%;
-	height: 99%;
-
+	height: 100%;
+	overflow-y:visible;
 }
-
 
 .principal-body-volver a:hover{
 	text-decoration: none; /* no underline */
@@ -44,19 +43,24 @@ html,body{
 
 @media only screen and (max-width: 767px) {
 	
+	.title{
+		height: 20%;
+	}
 
 	.logo-container{
 		width: 100%;
 		background-image:url('../images/logoPortada.png');
 		background-size: 100% 100%; 
-		height: 25%;
+		height: 45%;
+		z-index: 10;
 	}
 	
 	.picture_row{
+		position: relative;
 		width: 100%;
 		height: 85%;
 		margin:0;
-		padding:0;
+		padding:10px;
 	}
 	
 	.principal-body-calidad{
@@ -68,25 +72,25 @@ html,body{
 		overflow: hidden;
 	}
 	
-	.principal-body-calidad h1{
-		font-size: 50px;
-		font-family: 'Malbeck-Regular';
-		padding:0;
-	}
-	
 	.principal-body{
-		height: 92%;
+		position: relative;
+		height: 85%;
 	}
+
 	#principal-calidad{
 		padding: 0;
 	}
 	
 	.calidad-container-title{
-		position: relative;
+		position: absolute;
+		z-index: 2;
+		top: 45%;
 		padding: 0;
 		margin:0;
-		top: 24%;
 		color: white;
+		font-size: 50px;
+		font-family: 'Malbeck-Regular';
+		padding:0;
 	}
 	
 	.carousel-inner > .item{
@@ -101,11 +105,11 @@ html,body{
 	
 	.principal-body-slider{
 		position: absolute; /* Stay in place */
-	    z-index: 100; /* Sit on top */
+	    z-index: 0; /* Sit on top */
 	    width: 100%; /* Full width */
-	    height: 55%; /* Full height */
+	    
 	    overflow: auto; /* Enable scroll if needed */
-	    top: 41%;  /* position the top  edge of the element at the middle of the parent */
+	    top: 35%;  /* position the top  edge of the element at the middle of the parent */
 		margin:0;
 		padding:0;
 		right: 15px;
@@ -127,6 +131,10 @@ html,body{
 
 @media only screen and (min-width : 768px){
 	
+	body{
+		overflow: hidden;
+	}
+
 	.row{
 		height: 100%;
 		margin: 0;

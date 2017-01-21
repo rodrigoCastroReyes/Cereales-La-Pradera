@@ -6,8 +6,6 @@ html,body{
 }
 
 .principal-body{
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
@@ -127,7 +125,7 @@ html,body{
 }
 
 .historia-aside-mobil{
-	height: 25%;
+	height: 20%;
     overflow: auto;
     background-color: #f07d1d;
 }
