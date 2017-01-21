@@ -1,7 +1,7 @@
 @media(max-width: 767px) {
 
 	.principal-body-procesados{
-		background-image:url('../images/harina.png');
+		background-image:url('../images/harina.jpg');
 	}
 
 	#title_free{
@@ -10,28 +10,24 @@
 		color: #e70025;
 		font-size: 40px;
 	}
-	
-	.logo-container{
-		background-image:url('../images/logoPortada.png');
-	}
 
 }
 
 @media(min-width: 768px){
 
 	.principal-body-procesados-corner {
-    	background-image: url('../images/harina.png');
+    	background-image: url('../images/harina.jpg');
 	}
 	
 	.principal-body-procesados-corner-free{
-		background-image:url('../images/harinas.png');
+		background-image:url('../images/harinas.jpg');
 		background-position: center;
 		height: 100%;
 		background-size: 100% 130%; 
 	}
 
 	.principal-body-procesados{
-		background-image:url('../images/harina.png');
+		background-image:url('../images/harina.jpg');
 	}
 	
 	#harina-free{
