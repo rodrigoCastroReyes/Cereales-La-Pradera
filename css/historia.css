@@ -86,7 +86,7 @@ html,body{
 }
 
 .historia-gallery{
-	background-image: url("../images/historia/Foto1.png");
+	background-image: url("../images/historia/Foto1.jpg");
 	background-position: center;
 	height: 80%;
 	background-size: cover;
@@ -162,7 +162,7 @@ html,body{
 	
 	.principal-body-historia{
 		height: 100%;
-		background-image:url('../images/historia.png');
+		background-image:url('../images/historia.jpg');
 		background-position: center 100%;
 		background-size: 148% 55%; 
 	}
@@ -202,7 +202,7 @@ html,body{
 	}
 
 	.historia-gallery{
-		background-image: url("../images/historia/Foto1.png");
+		background-image: url("../images/historia/Foto1.jpg");
 		background-position: center;
 		height: 50%;
 	}

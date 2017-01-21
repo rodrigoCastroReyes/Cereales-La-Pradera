@@ -1,12 +1,8 @@
 	
 @media(max-width: 767px) {
 	.principal-body-procesados{
-		background-image:url('../images/precocidos_banner.png');
+		background-image:url('../images/precocidos_banner.jpg');
 		background-size: cover;
-	}
-
-	.logo-container{
-		background-image:url('../images/logoPortada.png');
 	}
 	
 }
@@ -15,11 +11,11 @@
 	
 	
 	.principal-body-procesados{
-		background-image:url('../images/precocido.png');
+		background-image:url('../images/precocido.jpg');
 	}
 	
 	.principal-body-procesados-corner{
-		background-image:url('../images/precocidos_banner.png');
+		background-image:url('../images/precocidos_banner.jpg');
 	}
 
 	

@@ -57,7 +57,7 @@ img{
 	
 	.principal-body-procesados{
 		height: 100%;
-		background-image:url('../images/granos_mobil.png');
+		background-image:url('../images/granos_mobil.jpg');
 		background-position: center 120%;
 		
 	}
@@ -149,14 +149,14 @@ img{
 	}
 
 	.principal-body-procesados{
-		background-image:url('../images/granos_pag.png');
+		background-image:url('../images/granos_pag.jpg');
 		background-position: center;
 		height: 100%;
 		background-size: 100% 100%; 
 	}
 
 	.principal-body-procesados-corner{
-		background-image:url('../images/granos_pag.png');
+		background-image:url('../images/granos_pag.jpg');
 		background-position: center;
 		height: 100%;
 		background-size: cover; 

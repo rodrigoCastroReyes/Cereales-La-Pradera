@@ -104,8 +104,12 @@ img {
     background-color: rgba(245,154,55,0.8);
 }
 
-.carousel-inner > .item > img {
-    margin: 0 auto;
+#slider-imgs > div > img {
+	height: 100%;
+}
+
+#slider-imgs > div {
+	height: 100%;
 }
 
 .btn-custom{
@@ -132,7 +136,7 @@ img {
 }
 
 .photo_one{
-    background-image: url("../images/mision/Foto4_mobil.png");
+    background-image: url("../images/mision/Foto4_mobil.jpg");
     height: 100%;
     width: 100%;
 }
@@ -195,7 +199,7 @@ img {
 	.side-bar-image{
 		height: 45%;
     	background-size: cover;
-   		background-image:url('../images/mision/FotoMain.png');
+   		background-image:url('../images/mision/FotoMain.jpg');
 	}
 
 	.side-bar-image > div{

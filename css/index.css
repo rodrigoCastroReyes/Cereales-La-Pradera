@@ -11,7 +11,7 @@ html,body{
 }
 
 .principal-body-granos{
-	background-image:url('../images/granos.png');
+	background-image:url('../images/granos.jpg');
 	align-items:center;
 }
 
@@ -22,11 +22,11 @@ html,body{
 
 .principal-body-precocidos{
 	position: relative;
-	background-image:url('../images/precocidos.png');
+	background-image:url('../images/precocidos.jpg');
 }
 
 .principal-body-harinas{
-	background-image:url('../images/harinas.png');
+	background-image:url('../images/harinas.jpg');
 	background-position: right top;
 	align-items:center;
 }
@@ -41,7 +41,7 @@ html,body{
 
 .principal-body-empresa{
 	position: relative;
-	background-image:url('../images/silos.png');
+	background-image:url('../images/silos.jpg');
 	height: 70%;
 	background-size: 100% 85%;
 	background-position-y: 100%;
