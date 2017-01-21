@@ -132,14 +132,20 @@ html,body{
     background-color: #f07d1d;
 }
 
+@media only screen and (max-height: 500px){
+	.historia-body{
+		margin-top: 25%;
+	}
+}
+
 @media only screen and (min-width : 768px){
 
 	#video-container{
-	margin-top: 5%;
-	margin-left: 10%;
-	width: 80%;
-	height: 75%;
-}
+		margin-top: 5%;
+		margin-left: 10%;
+		width: 80%;
+		height: 75%;
+	}
 
 	/* Text link style */
 	#scrollUp {
