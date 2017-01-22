@@ -1,21 +1,45 @@
 /*Flexbox Support*/
 
 .row-flex{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
 	flex-direction:row;
+	-webkit-box-direction: row;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-direction: row;         /* OLD - Firefox 19- */
+	-webkit-direction: row;          /* Chrome */
+	-ms-direction: row;              /* IE 10 */
 }
 
 .column-flex{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
 	flex-direction:column;
+	-webkit-box-direction: column;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-direction: column;         /* OLD - Firefox 19- */
+	-webkit-direction: column;          /* Chrome */
+	-ms-direction: column;              /* IE 10 */
 }
 
 .align-items-center{
 	align-items:center;
+	-webkit-box-align-items: center;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-align-items: center;         /* OLD - Firefox 19- */
+	-webkit-align-items: center;          /* Chrome */
+	-ms-align-items: center;              /* IE 10 */
 }
 
 .justify-content-center{
 	justify-content:center;
+	-webkit-box-justify-content: center;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-justify-content: center;         /* OLD - Firefox 19- */
+	-webkit-justify-content: center;          /* Chrome */
+	-ms-justify-content: center;              /* IE 10 */
 }
 
 .align-items-stretch{
@@ -32,10 +56,19 @@
 
 .align-items-end{
 	align-items:flex-end;
+	-webkit-box-align-items: flex-end;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-align-items: flex-end;         /* OLD - Firefox 19- */
+	-webkit-align-items: flex-end;          /* Chrome */
+	-ms-align-items: flex-end;              /* IE 10 */
+
 }
 
 .justify-content-end{
 	justify-content:flex-end;
+	-webkit-box-justify-content: flex-end;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-justify-content: flex-end;         /* OLD - Firefox 19- */
+	-webkit-justify-content: flex-end;          /* Chrome */
+	-ms-justify-content: flex-end;              /* IE 10 */
 }
 
 .flex-wrap{
