@@ -26,9 +26,8 @@ html,body{
 }
 
 .principal-body-institucional-btns{
-    height: 100%;
-    justify-content: flex-end;
-    padding-bottom: 10%;
+    padding-top: 230px;
+    padding-bottom: 20px;
 }
 
 .principal-body-noticias,.principal-body-calidad{
@@ -63,10 +62,10 @@ html,body{
     width: 500px;
 }
 
-@media only screen and (max-height:  500px){
+@media only screen and (max-height:  500px) and (max-width : 350px){
 
     .principal-body-institucional-btns{
-        padding-bottom: 5%;
+        padding-top: 200px;
     }
 
 }
@@ -128,14 +127,15 @@ html,body{
     }
 
     .principal-body-institucional-btns{
-        height: 100%;
-        padding-bottom: 20%;
+        padding-bottom: 80px;
+        padding-top: 280px;
     }
 
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1011px) {
-	    html,body{
+    
+    html,body{
         width: 100%;
         height: 100%;
         overflow-x: hidden;
@@ -190,7 +190,7 @@ html,body{
     }
 
     .principal-body-institucional-btns{
-        height: 100%;
-        padding-bottom: 20%;
+        padding-bottom: 80px;
+        padding-top: 280px;
     }
 }
