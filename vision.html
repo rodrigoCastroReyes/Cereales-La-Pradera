@@ -58,8 +58,21 @@
 		    	background-image:url('./images/vision/FotoMain_mobil.jpg');
 		    }
 		</style>
+		<script>
+			$(function () {
+				$('#popvideo').modal('show');
+				$("#popvideo").on('hidden.bs.modal', function (e) {
+					$("#popvideo iframe").attr("src", $("#popvideo iframe").attr("src"));
+				});
+			});
+		</script>
 	</head>
 	<body>
+		<div class="modal fade" id="popvideo">
+		    <div id="video-container" class="modal-content embed-responsive">
+				<iframe id="video-window" class="embed-responsive-item" src="https://www.youtube.com/embed/d-9xo7b9le8" allowfullscreen></iframe>            
+		    </div><!-- /.modal-content -->
+		</div><!-- /.modal -->
 		<div class="principal-bar">	
 			<div class="location-container col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
 				<div class="location-input-container row-flex align-items-center">
