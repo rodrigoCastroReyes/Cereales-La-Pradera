@@ -118,6 +118,15 @@ input{
 	margin: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+	.principal-bar{
+		height: 100px;
+	}
+	.location-container{
+		height: 50px;
+	}
+}
+
 @media only screen and (min-width : 768px){
 
 	.principal-bar{
