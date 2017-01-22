@@ -1,14 +1,16 @@
 @media(max-width: 767px) {
 
 	.principal-body-procesados{
-		background-image:url('../images/harina.jpg');
+		background-image:url('../images/harinas.jpg');
+		background-position: center 140px;
+		background-size: cover;
 	}
 
 	#title_free{
 		margin: 0 0 0 10px;
 		font-family: 'Malbeck-Regular';
 		color: #e70025;
-		font-size: 40px;
+		font-size: 55px;
 	}
 
 }

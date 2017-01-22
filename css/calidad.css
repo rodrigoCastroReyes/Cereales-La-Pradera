@@ -50,31 +50,17 @@ html,body{
 	.logo-container{
 		width: 100%;
 		background-image:url('../images/logoPortada.png');
-		background-size: 100% 100%; 
-		height: 45%;
+		background-size: 100% 190px; 
+		background-repeat: no-repeat;
+		height: 190px;
 		z-index: 10;
 	}
 	
 	.picture_row{
 		position: relative;
 		width: 100%;
-		height: 85%;
+		height: 460px;
 		margin:0;
-		padding:10px;
-	}
-	
-	.principal-body-calidad{
-		height: 110%;
-		width: 100%;
-		background-color: rgba(245,154,55,1);
-		margin:0;
-		padding:0;
-		overflow: hidden;
-	}
-	
-	.principal-body{
-		position: relative;
-		height: 85%;
 	}
 
 	#principal-calidad{
@@ -85,40 +71,38 @@ html,body{
 		right:0;
 		position: absolute;
 		z-index: 2;
-		top: 45%;
+		top: 190px;
 		padding: 0;
 		margin:0;
 		color: white;
 		font-size: 50px;
 		font-family: 'Malbeck-Regular';
-		padding:0;
+		padding-left:10px;
 	}
 	
 	.carousel-inner > .item{
 	   width:100%;
-	   height: 100%;
+	   height: 450px;
 	}
 	
 	.carousel-inner > .item > img{
 	   width:100%;
-	   height: 100%;
+	   height: 450px;
 	}
 	
 	.principal-body-slider{
 		position: absolute; /* Stay in place */
 	    z-index: 0; /* Sit on top */
 	    width: 100%; /* Full width */
-	    
 	    overflow: auto; /* Enable scroll if needed */
-	    top: 35%;  /* position the top  edge of the element at the middle of the parent */
+	    top: 150px;  /* position the top  edge of the element at the middle of the parent */
 		margin:0;
 		padding:0;
-		right: 15px;
 		left: 15px;
 
 	}
 	.principal-body-volver{
-		padding-top: 0%;
+		padding-top: 130px;
 		text-align: center;
 	}
 	.principal-body-volver a{
@@ -126,7 +110,6 @@ html,body{
 		font-family: 'cabana';
 		font-size: 40px;
 		cursor: pointer;
-
 	}
 }
 
