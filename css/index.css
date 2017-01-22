@@ -127,8 +127,8 @@ img{
 	}
 
 	.principal-body-precocidos{
-		background-size: contain;
-		background-position: center 88%;
+		background-size: 100% 95%;
+		background-position: center 290%;
 		height: 100%;
 		padding-bottom: 120px;
 		padding-left: 0px;
@@ -181,9 +181,10 @@ img{
 	}
 
 	.principal-body-precocidos{
-		background-size: contain;
-		background-position: center 100%;
+		background-size: 100% 95%;
+		background-position: center 290%;
 		height: 100%;
+		background-repeat: no-repeat;
 		padding-bottom: 120px;
 		padding-left: 0px;
 		padding-right: 0px;
