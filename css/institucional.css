@@ -16,9 +16,9 @@ html,body{
 
 .principal-mision{
 	position: relative;
-	height: 75%;
-	width: 100%;
-	margin-top: 40%
+    height: 70%;
+    width: 100%;
+    margin-top: -15%;
 }
 
 .row{
@@ -27,7 +27,7 @@ html,body{
 }
 
 .principal-mision-logo {
-	position: absolute;
+	position: relative;
 	top: 0;
     background-image: url('../images/logoPortada.png');
     background-size: 100% 100%;
@@ -142,8 +142,8 @@ img {
 }
 
 @media only screen and (max-height: 500px){
-	.principal-mision {
-		margin-top: 32%;
+	.principal-mision{
+		height: 72%;
 	}
 }
 /* Small Devices, Tablets */
