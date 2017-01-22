@@ -12,9 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/flex.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		
 		<link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-		
 		<script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
@@ -59,40 +57,40 @@
 	</head>
 	<body>
 		<div class="principal-bar">	
-		<div class="location-container col-xs-12 col-sm-12 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
-			<div class="location-input-container row-flex align-items-center">
-				<span class="location-icon glyphicon glyphicon-map-marker"></span>
-				<input id="address" class="location-input" type="text" placeholder="AQUI ESTOY">
-				<span class="search-icon glyphicon glyphicon glyphicon glyphicon-ok"></span>
+			<div class="location-container col-xs-12 col-sm-12 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
+				<div class="location-input-container row-flex align-items-center">
+					<span class="location-icon glyphicon glyphicon-map-marker"></span>
+					<input id="address" class="location-input" type="text" placeholder="AQUI ESTOY">
+					<span class="search-icon glyphicon glyphicon glyphicon glyphicon-ok"></span>
+				</div>
+			</div>
+			<div class="social-container col-xs-7 col-sm-6 col-md-4 col-md-pull-4 row-flex align-items-center justify-content-start">
+				<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.facebook.com/Cereales-La-Pradera-1386331644719946/?fref=ts">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+				<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://twitter.com/LaPradera_ec">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.instagram.com/lapraderaec/">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+				<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
+					<i class="fa fa-youtube" aria-hidden="true"></i>
+				</a>
+				<a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
+					<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+				</a>
+				<a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
+					<i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="language-container col-xs-5 col-sm-6 col-md-4 row-flex align-items-center justify-content-end">
+				<span class="row-flex align-items-end" >Idioma</span>
+				<span class="row-flex" style="font-size:36px;cursor:pointer;">ESP</span>
+				<span class="row-flex" style="font-size:36px;cursor:pointer;">ENG</span>
 			</div>
 		</div>
-		<div class="social-container col-xs-7 col-sm-6 col-md-4 col-md-pull-4 row-flex align-items-center justify-content-start">
-			<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.facebook.com/Cereales-La-Pradera-1386331644719946/?fref=ts">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://twitter.com/LaPradera_ec">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.instagram.com/lapraderaec/">
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
-				<i class="fa fa-youtube" aria-hidden="true"></i>
-			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
-				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-			</a>
-			<a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
-				<i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
-			</a>
-		</div>
-		<div class="language-container col-xs-5 col-sm-6 col-md-4 row-flex align-items-center justify-content-end">
-			<span class="row-flex align-items-end" >Idioma</span>
-			<span class="row-flex" style="font-size:36px;cursor:pointer;">ESP</span>
-			<span class="row-flex" style="font-size:36px;cursor:pointer;">ENG</span>
-		</div>
-	</div>
-		<div class="principal-body container-fluid">
+		<div class="principal-body">
 			<div class="row">
 				<div class="side-bar col-sm-3 col-md-3 column-flex justify-content-center hidden-sm-down" style="padding:0px;">
 					<div class="side-bar-image ">
@@ -104,8 +102,8 @@
 						<a class="btn-custom row-flex justify-content-center align-items-center" href="./historia.html">Historia</a> 
 				  	</div>
 				</div>
-				<div class="principal-container col-xs-12 col-sm-9 col-md-9 hidden-sm-down" style="padding:0px;">
-					<div class="principal-mision" >
+				<div class="principal-container col-xs-12 col-sm-9 col-md-9 " style="padding:0px;">
+					<div class="principal-mision hidden-sm-down" >			
 						<div class="principal-mision-slider">
 							<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							  <ol class="carousel-indicators">
@@ -115,7 +113,7 @@
 							  </ol>
 							  <div id="slider-imgs" class="carousel-inner" role="listbox">
 							    <div class="item active">
-							    	<img src="images/vision/FotoMain.jpg" alt="slide">
+							    	<img src="images/vision/fotomain.jpg" alt="slide">
 							    </div>
 							    <div class="item">
 							    	<img src="images/vision/Foto2.jpg" alt="slide">
@@ -133,27 +131,14 @@
 							</div>
 						</div>
 						<div class="principal-mision-buttons row-flex justify-content-center align-items-center hidden-md-up">
-							<a class="btn-custom row-flex align-items-center justify-content-center" href="./empresa.html">Misi&oacute;n</a>
-							<a class="btn-custom row-flex align-items-center justify-content-center" href="./empresa.html">Visi&oacute;n</a>
-							<a class="btn-custom row-flex align-items-center justify-content-center" href="./empresa.html">Historia</a>
+							<a class="btn-custom row-flex align-items-center justify-content-center" href="./mision.html">Misi&oacute;n</a>
+							<a class="btn-custom row-flex align-items-center justify-content-center" href="./vision.html">Visi&oacute;n</a>
+							<a class="btn-custom row-flex align-items-center justify-content-center" href="./historia.html">Historia</a>
 						</div>
 					</div>
-					<div class="principal-section">
-					  	<section class="col-md-12">
-							<h1 class="principal-section-title">Visi&oacute;n</h1>
-							<p  class="principal-section-paragraph">
-							<strong>Seremos un grupo empresarial </strong> de la industria de alimentos, con alcance internacional, creando valor para sus clientes, colaboradores y accionistas mediante la diferenciación de sus productos y servicios. 
-							Nuestro éxito comercial se sustentará en la responsabilidad social y la innovación de productos y servicios de alto valor, percibido para el mercado industrial, mayorista y de consumo.</br>
-							</p>
-							<a class="principal-section-back" href="javascript:history.back()">
-								<span>VOLVER</span>
-							</a>
-						</section>
-			  		</div>
-				</div>
-				<div class="principal-container col-xs-12 col-sm-9 col-md-9 " style="padding:0px;">
-					<div class="principal-mision" >
-						
+					<div class="principal-mision-logo row-flex justify-content-center hidden-md-up ">
+					</div>
+					<div class="principal-mision hidden-md-up" >
 						<div class="principal-mision-slider">
 							<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							  <ol class="carousel-indicators">
@@ -198,8 +183,6 @@
 							</a>
 						</section>
 			  		</div>
-			  		<div class="principal-mision-logo row-flex justify-content-center hidden-md-up ">
-					</div>
 				</div>
 			</div>
 			<div class="logo-container-mision">
