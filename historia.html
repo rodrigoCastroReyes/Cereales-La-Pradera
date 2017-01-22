@@ -63,9 +63,20 @@
 				
 				var current_index = 0;
 				var current_img = 1;
-				var images = ["./images/historia/Foto1.jpg","./images/historia/Foto2.jpg","./images/historia/Foto3.jpg"
-				,"./images/historia/Foto4.jpg","./images/historia/Foto5.jpg","./images/historia/Foto6.jpg","./images/historia/Foto7.jpg"]
-
+				var mediaquery = window.matchMedia("(min-width : 768px)");
+				if (mediaquery.matches) {
+				   var images = ["./images/historia/Foto1.jpg","./images/historia/Foto2.jpg","./images/historia/Foto3.jpg"
+					,"./images/historia/Foto4.jpg","./images/historia/Foto5.jpg","./images/historia/Foto6.jpg","./images/historia/Foto7.jpg"]
+				} else {
+					 var images = ["./images/historia/Foto1_mobil.jpg",
+						 "./images/historia/Foto2.jpg",
+						 "./images/historia/Foto3_mobil.jpg",
+						 "./images/historia/Foto4.jpg",
+						"./images/historia/Foto5_mobil.jpg",
+						"./images/historia/Foto6_mobil.jpg",
+						"./images/historia/Foto7.jpg"]
+				}
+				
 
 				$("#next").click(function(){					
 					

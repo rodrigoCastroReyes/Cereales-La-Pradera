@@ -87,7 +87,7 @@ html,body{
 }
 
 .historia-gallery{
-	background-image: url("../images/historia/Foto1.jpg");
+	background-image: url("../images/historia/Foto1_mobil.jpg");
 	background-position: center;
 	height: 80%;
 	background-size: cover;
@@ -237,6 +237,13 @@ html,body{
 	    position: absolute;
 	   	bottom: 30px;
 	    right: 20px
+	}
+
+	.historia-gallery{
+		background-image: url("../images/historia/Foto1.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 }
