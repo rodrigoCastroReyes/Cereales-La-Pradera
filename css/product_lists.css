@@ -127,6 +127,8 @@ img{
 		font-family: 'cabana';
 		font-size: 22px;
 		color: #E70025;
+		line-height: 20px;
+
 	}
 	.container-image{
 		margin-top: 5%;
@@ -180,7 +182,7 @@ img{
 		font-size: 25px;
 		margin: 0 100px 0 100px;
 		text-align: center;
-		line-height: 25px;
+		line-height: 30px;
 	}
 	
 	.btn-custom{
@@ -224,7 +226,7 @@ img{
 		font-family: 'cabana';
 		font-size: 40px;
 		color: #E70025;
-		line-height: 32px;
+		line-height: 35px;
 	}
 
 	.buttons-container{
@@ -265,6 +267,8 @@ img{
 	
 	.image-title{
 		font-size: 28px;
+		line-height: 25px;
+
 	}
 	
 	.product-value{
