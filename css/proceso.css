@@ -8,63 +8,55 @@ html,body{
 .principal-body{	
 	position: relative;
 	padding: 0px 0px;
-	height: 100%;
+	height: 82%;
 }
 
 .grano{
 	position: fixed;
 	z-index: 10;
-	top: 50%;  /* position the top  edge of the element at the middle of the parent */
+	top: 75%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%); /* This is a shorthand of                                      translateX(-50%) and translateY(-50%) */
+    transform: translate(-50%, -75%); /* This is a shorthand of                                      translateX(-50%) and translateY(-50%) */
 }
 
 .step-one{
 	position: relative;
 	background-image:url('../images/proceso/FondoAmarillo1.png');
-
+	padding:20px;
 }
 
-.step-two{
-	position: relative;
-	background-image:url('../images/proceso/FondoGrande2.png');
+.step-one-title{
+	height: 30%;
+	/*margin-bottom: 350px;*/
+	background-image:url('../images/proceso/Titular_mobil.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
 }
 
-.step-three{
-	position: relative;
-	background-image:url('../images/proceso/FondoGrande3.png');
-}
-
-.step-four{
-	position: relative;
-	background-image:url('../images/proceso/fondo4.png');
-}
-
-.step-one{
-	height: 92%;
-	background-size: cover;
-}
-
-.step-two,.step-three,.step-four{
-	background-size: cover;
-	background-position: 50% 50%;
-	height: 100%;
+.step-one-campesino{
+	position: absolute;
+	top: 15%;
+    right: 20%;
+	width: 100%;
+	height: 70%;
+    background-image:url('../images/proceso/campesino2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.65;
 }
 
 .step-one-legend{
-	background-color: #f4891f;
-	color: white;
-	font-family: 'cabana';
-	font-size: 36px;
-	font-weight: 600;
-	padding: 20px;
-	text-align: center;
-	margin-bottom: 50px;
-	background-image: url("../images/proceso/Texto1.png");
+	height: 50%;
+	background-image: url("../images/proceso/frase1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-    height: 25%;
     background-position: center;
+    position: relative;
+    z-index: 2;
 }
 
 .step-one-productos{
@@ -80,102 +72,102 @@ html,body{
     cursor: pointer;
 }
 
-.step-two-legend{
-	position: relative;
-	background-color: #faf7b4;
-	color: #e61d2f;
-	font-family: 'cabana';
-	font-size: 36px;
-	font-weight: 600;
-	padding: 20px;
-	text-align: center;
-	background-image: url('../images/proceso/Texto2.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-    height: 25%;
-    background-position: center;
 
+.step-two{
+	position: relative;
+	background-image:url('../images/proceso/FondoGrande2.png');
 }
 
-.step-one-campesino{
+.step-two-background{
 	position: absolute;
-	top: 0;
-	right: 30%;
-	width: 100%;
-	height: 100%;
-    background-image:url('../images/proceso/campesino2.png');
-    background-repeat: no-repeat;
+    background-color: #e31e2f;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    transform: translate(-50%,0%);
+}
+
+.step-two-legend{
+	position: relative;
+	background-color: transparent;
+	margin: 10px;
+	text-align: center;
+	background-image: url('../images/proceso/frase2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 35%;
     background-position: center;
-    background-size: contain;
-    opacity: 0.65;
 }
 
 .step-two-machine{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 25%;
-	height: 100%;
-    background-color: #e31e2f;
+	height: 65%;    
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain;
-    background-image: url('../images/proceso/ColorRojoCentral2.png');
-    transform: translate(-50%, 0%); /* This is a shorthand of  */
+    background-image: url('../images/proceso/step_one_machine_mobil.png');
+    background-position: center;
+    /*transform: translate(-50%, 0%); This is a shorthand of  */
 }
+
+.step-three{
+	position: relative;
+	background-image:url('../images/proceso/FondoGrande3.png');
+}
+
+.step-four{
+	position: relative;
+	background-image:url('../images/proceso/fondo4.png');
+}
+
+.step-one{
+	height: 100%;
+	background-size: cover;
+}
+
+.step-two,.step-three,.step-four{
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100%;
+}
+
 
 .step-three-legend{
 	background-color: white;
-	color: #f08233;
-	font-family: 'cabana';
-	font-size: 36px;
-	font-weight: 600;
 	padding: 20px;
 	text-align: center;
-	margin-bottom: 200px;
-	margin-right: 0px;
-	margin-left: 0px;
-	background-image: url("../images/proceso/texto3.png");
+	background-image: url("../images/proceso/frase3.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-    height: 25%;
+    height: 35%;
+    width: 100%;
     background-position: center;
+    margin: 10px;
 }
 
 .step-three-machine{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 90%;
+	height: 60%;
 	background-image:url('../images/proceso/maquina.png');
 	background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 100%;
+    margin: 10px;
 }
 
+
 .step-four-legend{
-	background-color: #f18221;
-	color: white;
-	font-family: 'cabana';
-	font-size: 36px;
-	font-weight: 600;
-	padding: 20px;
-	text-align: center;
-	margin-top: 60px;
-	margin-left: 40px;
-	background-image: url("../images/proceso/texto4.png");
+	background-image: url("../images/proceso/frase4_mobil.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
-    height: 25%;
+    height: 30%;
     background-position: center;
+    margin: 5px 0px;
 }
 
 .step-four-machine{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 90%;
+	height: 65%;
 	background-image:url('../images/proceso/maquina2.png');
 	background-repeat: no-repeat;
     background-position: center;
@@ -184,17 +176,9 @@ html,body{
 }
 
 .step-four-footer{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-    left: 0;
 	height: 10%;
-	padding-top: 10px;
 	background-color: #e31e2f;
-	
-	
 	text-align: center;
-	vertical-align: center;
 }
 
 .step-four-footer>a{
@@ -209,6 +193,15 @@ html,body{
 	text-decoration: none;
 	color: white;
 }
+
+.step-five-legend{
+	background-image: url("../images/proceso/frase5.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 25%;
+    background-position: center;
+}
+
 
 .grano_one,.grano_two,.grano_three,.grano_five{
 	position: absolute;
@@ -235,33 +228,8 @@ html,body{
 }
 
 .grano_one{
-	top: 25%;  /* position the top  edge of the element at the middle of the parent */
-    left: 75%; /* position the left edge of the element at the middle of the parent */
-}
-
-.grano_two{
-	top: 5%;
-    left: 60%;
-}
-
-.grano_three{
-	top: 10%;
-    left: 25%;
-}
-
-.grano_four{
-	top: 15%;
-    left: 40%;
-}
-
-.grano_five{
-	top: 45%;
-	left: 30%;
-}
-
-.grano_six{
-	top: 35%;
-	left: 60%;
+	top: 20%;  /* position the top  edge of the element at the middle of the parent */
+    left: 65%; /* position the left edge of the element at the middle of the parent */
 }
 
 @keyframes rotate {
@@ -293,6 +261,109 @@ html,body{
     90%  {transform: rotate(10deg);}
     100% {transform: rotate(0deg);}
 }
+
+@media only screen and (min-width : 1012px){
+
+	.principal-body{	
+		position: relative;
+		padding: 0px 0px;
+		height: 92%;
+	}
+
+
+	.grano{
+		position: fixed;
+		z-index: 10;
+		top: 50%;  /* position the top  edge of the element at the middle of the parent */
+	    left: 50%; /* position the left edge of the element at the middle of the parent */
+	    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+	}
+
+	.grano_one{
+		top: 10%;
+		left: 70%;
+	}
+	
+	.grano_two{
+		top: 15%;
+	    left: 60%;
+	}
+
+	.grano_three{
+		top: 15%;
+	    left: 25%;
+	}
+
+	.grano_four{
+		top: 15%;
+	    left: 40%;
+	}
+
+	.grano_five{
+		top: 45%;
+		left: 30%;
+	}
+
+	.grano_six{
+		top: 35%;
+		left: 60%;
+	}
+
+	.step-one-title{
+		height: 20%;
+		width: 50%;
+		margin-bottom: 350px;
+		background-image:url('../images/proceso/Titular.png');
+		background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: contain;
+	}
+
+	.step-one-campesino{
+		top: 5%;
+		right: 30%;
+		height: 90%;
+	}
+
+	.step-two-machine{
+		height: 100%;
+		background-image: url('../images/proceso/step_one_machine.png');
+		background-position: center;
+	}
+
+	.step-three-machine{
+		height: 100%;
+	}
+
+	.step-four-machine{
+		height: 100%;
+	}
+
+	.step-two,.step-three,.step-four{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.step-four{
+		flex-wrap:wrap;
+		align-items:center;
+		align-self: flex-end;
+	}
+
+	.step-four-legend{
+		align-self: flex-start;
+		background-image: url("../images/proceso/frase4.png");
+		margin-top: 25px;
+	}
+
+	.step-five-legend{
+		align-self: flex-end;
+		    margin-bottom: 25px;
+	}
+
+}
+
+
 
 /*
 @-webkit-keyframes rotation {
