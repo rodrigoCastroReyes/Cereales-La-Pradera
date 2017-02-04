@@ -3,20 +3,141 @@ html,body{
 	width: 100%;
 }
 
-.principal-body{
-	position: relative;
-	margin-right: auto;
-    margin-left: auto;
-    padding:0px;
-    height: 95%;
+@media(min-width:768px){
+
+	.principal-body{
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		padding:0px;
+	}
+
+	.row{
+		height: 100%;
+	}
+
+	.principal-body-noticias{
+		margin-top:0;
+		height: 100%;
+		width: 100%;
+	}
+
+	#logo{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		z-index: 1;
+	}
+
+	#img-logo{
+		margin-top:14%;
+		margin-left:65%;
+		width:13%;
+	}
+
+	#images-div{
+		margin-bottom: 3%;
+		
+	}
+
+	.thumbnail{
+		border: 0;
+		margin-bottom: 0;
+	}
+
+	.noticia-info{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	h5{
+		height: 50px;
+	}
+
+	.thumbnail:hover > a{
+		text-decoration:none;
+	}
+
+	.thumbnail:hover{
+		box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.75);
+	}
+
+	#volver a{
+		padding: 0;
+		font-family: 'cabana';
+		font-size: 50px;
+		color: red;
+		cursor: pointer;
+		
+	}
+
+	#volver a:hover{
+		text-decoration: none; /* no underline */
+		color:#f44336;
+		font-weight: bold;
+	}
+	#volver{
+		text-align:right;
+	}
 }
 
-.row{
-	height: 100%;
-}
+@media(max-width:767px){
+	.principal-body{
+		margin:0;
+		padding:0px;
+	}
+	.container-fluid{
+		padding:0;
+		margin:0;
+	}
+	.picture_row{
+		width: 100%;
+		height: 338px;
+		margin-bottom: 25px;
+	}
+	.logo-container{
+		width: 100%;
+		background-image:url('../images/logoPortada.png');
+		background-size: 100% 100%; 
+		height: 190px;
+	}
+	.principal-body-procesados{
+		width: 100%;
+		height: 338px;
+		background-image:url('../images/noticias/noticias_mobile.jpg');
+		background-position: center 150px;
+		background-size: contain;
+		/*background-repeat: no-repeat;*/
+	}
+	#volver a{
+		padding: 0;
+		font-family: 'cabana';
+		font-size: 40px;
+		color: red;
+		cursor: pointer;
+	}
 
-.principal-body-noticias{
-	height: 100%;
-	width: 100%;
-	padding: 30px;
+	#volver a:hover{
+		text-decoration: none; /* no underline */
+		color:#f44336;
+		font-weight: bold;
+	}
+	
+	#volver{
+		text-align:center;
+	}
+	.thumbnail{
+		border: 0;
+		margin-bottom: 10px;
+	}
+	
+	.thumbnail:hover > a{
+		text-decoration:none;
+	}
+	
+	.thumbnail > a:focus{
+		box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.75);
+	}
+
 }
