@@ -27,11 +27,28 @@
 				activeOverlay: '#00FFFF',
 				scrollText: 'Ir Arriba'
 			});
+			$('#pop_up_ilustracion').modal('show');
+			
+			$("#pop_up_ilustracion").on('hidden.bs.modal', function (e) {
+				
+			});
+
+			$("#pop_up_container").click(function(){
+				window.location.href= '/proceso.html';
+			})
+
 		});
 		$('.link-switch').addClass('active');
 	</script>
 </head>
 <body>
+	<div class="modal fade" id="pop_up_ilustracion">
+	    <div id="pop_up_container" class="modal-content embed-responsive col-xs-10 col-sm-8 col-md-4">
+			<div class="pop_up">
+				
+			</div>     
+	    </div><!-- /.modal-content -->
+	</div><!-- /.modal -->
 	<div class="principal-bar">	
 		<div class="location-container col-xs-12 col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 row-flex justify-content-start align-items-center" style="padding: 10px 0px;">
 			<div class="location-input-container row-flex align-items-center">
