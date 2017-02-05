@@ -55,12 +55,9 @@ html,body{
 		height: 50px;
 	}
 
-	.thumbnail:hover > a{
-		text-decoration:none;
-	}
-
-	.thumbnail:hover{
-		box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.75);
+	.thumbnail > a > img:hover{
+	   -webkit-filter: brightness(80%);
+		filter:  brightness(80%);
 	}
 
 	#volver a{
@@ -71,7 +68,6 @@ html,body{
 		cursor: pointer;
 		
 	}
-
 	#volver a:hover{
 		text-decoration: none; /* no underline */
 		color:#f44336;
@@ -135,9 +131,9 @@ html,body{
 	.thumbnail:hover > a{
 		text-decoration:none;
 	}
-	
-	.thumbnail > a:focus{
-		box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.75);
+	.thumbnail > a > img:focus{
+	   -webkit-filter: brightness(80%);
+		filter:  brightness(80%);
 	}
 
 }
