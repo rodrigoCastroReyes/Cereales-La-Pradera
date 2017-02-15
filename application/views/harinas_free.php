@@ -5,22 +5,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 <head>
     <title>La Pradera</title>
     <meta charset="UTF-8">
-    <link rel='shortcut icon' type='image/x-icon' href='images/logo.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url('assets/images/logo.ico')?>' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/flex.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/flex.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fonts.css')?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom_elements.css">
-    <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-    <link rel="stylesheet" type="text/css" href="css/product_lists.css"></link>
-    <link rel="stylesheet" type="text/css" href="css/harinas.css">
-    <script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/jquery.scrollUp.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom_elements.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/nav_bar.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/product_lists.css')?>"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/harinas.css')?>">
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery-1.11.3.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery.scrollUp.min.js')?>" ></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3GG1bWOb8u2eCEteiCY1yGnaKrqgW6R4&libraries=places"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <script>
         $(function () {
@@ -55,10 +55,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
             <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/contacto')?>">
             <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/index')?>">
             <i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
         </a>
     </div>
@@ -76,8 +76,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
             </div>
         </div>
         <div id="buttons_bar" class="text-center">
-            <a class="btn-custom" style="margin-right: 1%" href="./harinas.html">Harinas</a>
-            <span class="btn-custom" href="./harinas_free.html">Harinas Gluten Free</span>
+            <a class="btn-custom" style="margin-right: 1%" href="<?php echo base_url('index.php/home/harinas')?>">Harinas</a>
+            <span class="btn-custom" href="<?php echo base_url('index.php/home/harinas_free')?>">Harinas Gluten Free</span>
         </div>
         <div class="description">
             <div id="title_free">Harinas Gluten Free</div>
@@ -94,13 +94,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
             <div class="product-description col-xs-11">
                 <div class="col-xs-12">
                     <div class="container-image col-xs-6">
-                        <img class="image-pic" src="./images/harinas free/Maicena.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Maicena.jpg')?>"/>
                         <div class="image-title text-center">Maicena</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-xs-6">
-                        <img class="image-pic" src="./images/harinas free/Almidon-de-yuca.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Almidon-de-yuca.jpg')?>"/>
                         <div class="image-title text-center">Almidón de yuca</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
@@ -108,13 +108,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 </div>
                 <div class="col-xs-12">
                     <div class="container-image col-xs-6">
-                        <img class="image-pic" src="./images/harinas free/Quinua.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Quinua.jpg')?>"/>
                         <div class="image-title text-center">Quinua</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-xs-6">
-                        <img class="image-pic" src="./images/harinas free/Harina-de-haba.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Harina-de-haba.jpg')?>"/>
                         <div class="image-title text-center">Harina de haba</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 </div>
                 <div class="col-xs-12">
                     <div class="container-image col-xs-6">
-                        <img class="image-pic" src="./images/harinas free/Harina-de-Arveja.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Harina-de-Arveja.jpg')?>"/>
                         <div class="image-title text-center">Harina de arveja</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
@@ -140,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         </div>
         <div class="row-floating buttons-container column-flex justify-content-center">
             <div class="institucional-container column-flex justify-content-space-between ">
-                <a class="btn-custom row-flex align-items-center justify-content-center" href="./harinas.html">Harinas</a>
+                <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/harinas')?>">Harinas</a>
             </div>
             <div class="institucional-container column-flex justify-content-space-between" style="margin-top: 10%">
                 <span id="harina-free" class="btn-custom row-flex align-items-center justify-content-center">Harinas Gluten Free</span>
@@ -162,44 +162,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 <h1 class="subtitle">Lista de Productos</h1>
                 <div class="product-description col-sm-12 col-md-12">
                     <div class="container-image col-sm-offset-1 col-md-offset-1 col-sm-2 col-md-2">
-                        <img class="image-pic" src="./images/harinas free/Maicena.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Maicena.jpg')?>"/>
                         <div class="image-title text-center">Maicena</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-sm-2 col-md-2">
-                        <img class="image-pic" src="./images/harinas free/Almidon-de-yuca.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Almidon-de-yuca.jpg')?>"/>
                         <div class="image-title text-center">Almidón de yuca</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-sm-2 col-md-2">
-                        <img class="image-pic" src="./images/harinas free/Quinua.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Quinua.jpg')?>"/>
                         <div class="image-title text-center">Quinua</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-sm-2 col-md-2">
-                        <img class="image-pic" src="./images/harinas free/Harina-de-haba.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Harina-de-haba.jpg')?>"/>
                         <div class="image-title text-center">Harina de haba</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                     <div class="container-image col-sm-2 col-md-2">
-                        <img class="image-pic" src="./images/harinas free/Harina-de-Arveja.jpg"></img>
+                        <img class="image-pic" src="<?php echo base_url('assets/images/harinas free/Harina-de-Arveja.jpg')?>"/>
                         <div class="image-title text-center">Harina de arveja</div>
                         <div class="product-value text-center"><b>PACK X 250 G</b></div>
                         <div class="product-value text-center"><b>PACK X 500 G</b></div>
                     </div>
                 </div>
                 <div id="volver" class="col-sm-11 col-md-11 text-right">
-                    <a href="./index.html">Volver</a>
+                    <a href="<?php echo base_url('index.php/home/index')?>">Volver</a>
                 </div>
             </div>
         </div>
     </div>
 
-</div>
 </div>
 </body>
 </html>

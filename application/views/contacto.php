@@ -58,46 +58,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 <div id="contact-form" class="col-xs-12 col-sm-12 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-sm-5 col-md-5 col-lg-5">
     <div class="hidden-md-up col-xs-12 col-sm-12 logo-container" ></div>
     <div id="contact-title"><h1>Contáctanos</h1></div>
-    <form id="contact-form">
+    <form id="contact-form" action="<?php echo base_url('index.php/home/sendmail')?>" method="post">
         <div class="hidden-sm-down form-group row-flex align-items-center">
             <label for="sender-name" class="name control-label label-sender col-md-3 col-lg-3">Nombre</label>
-            <div class="col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control"></div>
+            <div class="col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control" name="nombres"></div>
         </div>
         <div class="hidden-sm-down form-group row-flex align-items-center">
             <label for="sender-name" class="name control-label label-sender col-md-3 col-lg-3">Teléfono</label>
-            <div class="col-sm-9 col-md-9 col-lg-9"><input type="tel" class="form-control"></div>
+            <div class="col-sm-9 col-md-9 col-lg-9"><input type="tel" class="form-control" name="telefono"></div>
         </div>
         <div class="hidden-sm-down form-group row-flex align-items-center">
             <label for="sender-name" class="name control-label label-sender col-sm-3 col-md-3 col-lg-3">Email</label>
-            <div class="col-sm-9 col-md-9 col-lg-9"><input type="email" class="form-control"></div>
+            <div class="col-sm-9 col-md-9 col-lg-9"><input type="email" class="form-control" name="email"></div>
         </div>
         <div class="hidden-sm-down form-group row-flex align-items-center">
             <label for="sender-name" class="name control-label label-sender col-sm-3 col-md-3 col-lg-3">Compañía</label>
-            <div class="col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control"></div>
+            <div class="col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control" name="compania"></div>
         </div>
         <div class="hidden-sm-down form-group row-flex align-items-cente">
             <label for="message-text" class="control-label label-message col-sm-3 col-md-3 col-lg-3">Mensaje</label>
-            <div class="col-sm-9 col-md-9 col-lg-9"><textarea id="message" class="form-control"></textarea></div>
+            <div class="col-sm-9 col-md-9 col-lg-9"><textarea id="message" class="form-control" name="mensaje"></textarea></div>
         </div>
         <div class="hidden-sm-down contact-buttons">
-            <button id="btn_send_message" type="button" class="btn btn-primary glyphicon glyphicon glyphicon-ok"></button>
+            <button id="btn_send_message" type="submit" class="btn btn-primary glyphicon glyphicon glyphicon-ok"></button>
         </div>
     </form>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-md-5 col-lg-5">
-    <form id="contact-form">
+    <form id="contact-form" action="<?php echo base_url('index.php/home/sendmail')?>" method="post">
         <label for="sender-name" class="hidden-md-up name control-label label-sender col-xs-12 col-sm-12">Nombre</label>
-        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="text" class="form-control"></div>
+        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="text" class="form-control" name="nombres"></div>
         <label for="sender-name" class="hidden-md-up name control-label label-sender col-xs-12 col-sm-12">Teléfono</label>
-        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="tel" class="form-control"></div>
+        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="tel" class="form-control" name="telefono"></div>
         <label for="sender-name" class="hidden-md-up name control-label label-sender col-xs-12 col-sm-12">Email</label>
-        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="email" class="form-control"></div>
+        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="email" class="form-control" name="email"></div>
         <label for="sender-name" class="hidden-md-up name control-label label-sender col-xs-12 col-sm-12">Compañía</label>
-        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="text" class="form-control"></div>
+        <div class="hidden-md-up col-xs-12 col-sm-12"><input type="text" class="form-control" name="compania"></div>
         <label for="message-text" class="hidden-md-up control-label label-message col-xs-12 col-sm-12">Mensaje</label>
-        <div class="hidden-md-up col-xs-12 col-sm-12"><textarea id="message" class="form-control"></textarea></div>
+        <div class="hidden-md-up col-xs-12 col-sm-12"><textarea id="message" class="form-control" name="mensaje"></textarea></div>
         <div class="hidden-md-up contact-buttons text-right col-xs-12 col-sm-12">
-            <button id="btn_send_message" type="button" class="btn btn-primary glyphicon glyphicon glyphicon-ok"></button>
+            <button id="btn_send_message" type="submit" class="btn btn-primary glyphicon glyphicon glyphicon-ok"></button>
         </div>
     </form>
     <div id="company-info" class="col-xs-12 col-sm-12">

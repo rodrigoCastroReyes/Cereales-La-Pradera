@@ -6,17 +6,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     <title>La Pradera</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='images/logo.ico' />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/custom_elements.css">
-    <link rel="stylesheet" type="text/css" href="css/institucional.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/flex.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url('assets/images/logo.ico')?>' />
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom_elements.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/institucional.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/flex.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fonts.css')?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-    <script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/nav_bar.css')?>">
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery-1.11.3.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <style type="text/css">
         /*carousel*/
@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         }
 
         .side-bar-image {
-            background-image:url('./images/vision/FotoMain_mobil.jpg');
+            background-image:url('/assets/images/vision/FotoMain_mobil.jpg');
         }
     </style>
     <script>
@@ -96,10 +96,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
             <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/contacto')?>">
             <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/index')?>">
             <i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
         </a>
     </div>
@@ -116,9 +116,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 <div></div>
             </div>
             <div class="side-bar-institucional col-md-12 column-flex align-items-center">
-                <a class="btn-custom row-flex align-items-center justify-content-center" href="./mision.html">Misi&oacute;n</a>
-                <a class="btn-custom row-flex justify-content-center align-items-center" href="./vision.html">Visi&oacute;n</a>
-                <a class="btn-custom row-flex justify-content-center align-items-center" href="./historia.html">Historia</a>
+                <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/mision')?>">Misi&oacute;n</a>
+                <a class="btn-custom row-flex justify-content-center align-items-center" href="<?php echo base_url('index.php/home/vision')?>">Visi&oacute;n</a>
+                <a class="btn-custom row-flex justify-content-center align-items-center" href="<?php echo base_url('index.php/home/historia')?>">Historia</a>
             </div>
         </div>
         <div class="principal-container col-xs-12 col-sm-9 col-md-9 " style="padding:0px;">
@@ -132,13 +132,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                         </ol>
                         <div id="slider-imgs" class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/vision/FotoMain.jpg" alt="slide">
+                                <img src="<?php echo base_url('assets/images/vision/FotoMain.jpg')?>" alt="slide">
                             </div>
                             <div class="item">
-                                <img src="images/vision/Foto2.jpg" alt="slide">
+                                <img src="<?php echo base_url('assets/images/vision/Foto2.jpg')?>" alt="slide">
                             </div>
                             <div class="item">
-                                <img src="images/vision/Foto3.jpg" alt="slide">
+                                <img src="<?php echo base_url('assets/images/vision/Foto3.jpg')?>" alt="slide">
                             </div>
                         </div>
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -150,9 +150,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                     </div>
                 </div>
                 <div class="principal-mision-buttons row-flex justify-content-center align-items-center hidden-md-up">
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./mision.html">Misi&oacute;n</a>
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./vision.html">Visi&oacute;n</a>
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./historia.html">Historia</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/mision')?>">Misi&oacute;n</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/vision')?>">Visi&oacute;n</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/historia')?>">Historia</a>
                 </div>
             </div>
             <div class="principal-mision-logo row-flex justify-content-center hidden-md-up ">
@@ -167,13 +167,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                         </ol>
                         <div id="slider-imgs" class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/vision/FotoMain_mobil.jpg" alt="slide">
+                                <img src="<?php echo base_url('assets/images/vision/FotoMain_mobil.jpg')?>" alt="slide">
                             </div>
                             <div class="item">
-                                <img src="images/vision/Foto2_mobil.jpg" alt="slide">
+                                <img src="<?php echo base_url('assets/images/vision/Foto2_mobil.jpg')?>" alt="slide">
                             </div>
                             <div class="item">
-                                <img  src="images/vision/Foto3_mobil.jpg" alt="slide">
+                                <img  src="<?php echo base_url('assets/images/vision/Foto3_mobil.jpg')?>" alt="slide">
                             </div>
                         </div>
                         <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
@@ -185,9 +185,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                     </div>
                 </div>
                 <div class="principal-mision-buttons row-flex justify-content-center align-items-center hidden-md-up">
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./mision.html">Misi&oacute;n</a>
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./vision.html">Visi&oacute;n</a>
-                    <a class="btn-custom row-flex align-items-center justify-content-center" href="./historia.html">Historia</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/mision')?>">Misi&oacute;n</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/vision')?>">Visi&oacute;n</a>
+                    <a class="btn-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/historia')?>">Historia</a>
                 </div>
             </div>
             <div class="principal-section">

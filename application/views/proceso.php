@@ -6,17 +6,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     <title>La Pradera</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='images/logo.ico' />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/flex.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url('assets/images/logo.ico')?>' />
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/flex.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fonts.css')?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom_elements.css">
-    <link rel="stylesheet" type="text/css" href="css/proceso.css">
-    <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-    <script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom_elements.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/proceso.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/nav_bar.css')?>">
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery-1.11.3.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 </head>
 <body>
@@ -41,10 +41,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
             <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/contacto')?>">
             <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/index')?>">
             <i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
         </a>
     </div>
@@ -56,25 +56,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 </div>
 <div class="principal-body ">
     <div class="grano">
-        <img src="images/proceso/GranoSolo.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_one">
-        <img src="images/proceso/GranoSolo_one.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_one.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_two hidden-sm-down">
-        <img src="images/proceso/GranoSolo_two.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_two.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_three hidden-sm-down">
-        <img src="images/proceso/GranoSolo_three.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_three.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_four hidden-sm-down">
-        <img src="images/proceso/GranoSolo_four.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_four.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_five hidden-sm-down">
-        <img src="images/proceso/GranoSolo_five.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_five.png')?>" width="100px" height="100px">
     </div>
     <div class="grano_six hidden-sm-down">
-        <img src="images/proceso/GranoSolo_six.png" width="100px" height="100px">
+        <img src="<?php echo base_url('assets/images/proceso/GranoSolo_six.png')?>" width="100px" height="100px">
     </div>
     <div class="step-one column-flex justify-content-start align-items-center col-xs-12 col-md-12">
         <div style="height:50%" class="col-xs-12 row-flex justify-content-center align-items-start">
@@ -91,9 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <div class="step-one-campesino">
 
         </div>
-        <a class="step-one-productos hidden-sm-down" href="precocidos.html">
-
-        </a>
+        <a class="step-one-productos hidden-sm-down" href="<?php echo base_url('index.php/home/precocidos')?>"></a>
     </div>
     <div class="step-two row-flex justify-content-center align-items-center col-md-12">
         <div class="step-two-background col-md-4 hidden-sm-down">
@@ -129,7 +127,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 
         </div>
         <div class="step-four-footer col-xs-12 col-sm-12 col-md-12">
-            <a href="precocidos.html"> VER LISTA DE PRODUCTOS </a>
+            <a href="<?php echo base_url('index.php/home/precocidos')?>"> VER LISTA DE PRODUCTOS </a>
         </div>
     </div>
 </body>

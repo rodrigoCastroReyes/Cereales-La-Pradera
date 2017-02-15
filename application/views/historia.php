@@ -6,18 +6,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     <title>La Pradera</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel='shortcut icon' type='image/x-icon' href='images/logo.ico' />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/flex.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>"/>
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url('assets/images/logo.ico')?>' />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/flex.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fonts.css')?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom_elements.css">
-    <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
-    <link rel="stylesheet" type="text/css" href="css/historia.css">
-    <script type="text/javascript" src="lib/jquery-1.11.3.min.js" ></script>
-    <script type="text/javascript" src="lib/jquery.scrollUp.min.js" ></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom_elements.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/nav_bar.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/historia.css')?>">
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery-1.11.3.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery.scrollUp.min.js')?>" ></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <style type="text/css">
         /*carousel*/
@@ -67,17 +67,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
             var current_img = 1;
             var mediaquery = window.matchMedia("(min-width : 768px)");
             if (mediaquery.matches) {
-                var images = ["./images/historia/Foto1.jpg","./images/historia/Foto2.jpg","./images/historia/Foto3.jpg"
-                    ,"./images/historia/Foto4.jpg","./images/historia/Foto5.jpg","./images/historia/Foto6.jpg","./images/historia/Foto7.jpg","./images/historia/Foto8.jpg"]
+                var images = ["/assets/images/historia/Foto1.jpg","/assets/images/historia/Foto2.jpg","/assets/images/historia/Foto3.jpg"
+                    ,"/assets/images/historia/Foto4.jpg","/assets/images/historia/Foto5.jpg","/assets/images/historia/Foto6.jpg","/assets/images/historia/Foto7.jpg","/assets/images/historia/Foto8.jpg"]
             } else {
-                var images = ["./images/historia/Foto1_mobil.jpg",
-                    "./images/historia/Foto2_moil.jpg",
-                    "./images/historia/Foto3_mobil.jpg",
-                    "./images/historia/Foto4.jpg",
-                    "./images/historia/Foto5_mobil.jpg",
-                    "./images/historia/Foto6_mobil.jpg",
-                    "./images/historia/Foto7.jpg",
-                    "./images/historia/Foto8_mobil.jpg"]
+                var images = ["/assets/images/historia/Foto1_mobil.jpg",
+                    "/assets/images/historia/Foto2_moil.jpg",
+                    "/assets/images/historia/Foto3_mobil.jpg",
+                    "/assets/images/historia/Foto4.jpg",
+                    "/assets/images/historia/Foto5_mobil.jpg",
+                    "/assets/images/historia/Foto6_mobil.jpg",
+                    "/assets/images/historia/Foto7.jpg",
+                    "/assets/images/historia/Foto8_mobil.jpg"]
             }
 
 
@@ -141,10 +141,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         <a class="a-custom row-flex align-items-center justify-content-center" target="_blank" href="https://www.youtube.com/channel/UCZhZJyjV8yGydRa-gIX-z8w">
             <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./contacto.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/contacto')?>">
             <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
         </a>
-        <a class="a-custom row-flex align-items-center justify-content-center" href="./index.html">
+        <a class="a-custom row-flex align-items-center justify-content-center" href="<?php echo base_url('index.php/home/index')?>">
             <i class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></i>
         </a>
     </div>
@@ -158,9 +158,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     <div class="row">
         <div class="historia-aside column-flex justify-content-end hidden-xs col-sm-3 col-md-3">
             <div class="institucional-container column-flex align-items-center justify-content-end" >
-                <a class="btn-custom flex-row justify-content-center align-items-center" href="./mision.html">Misión</a>
-                <a class="btn-custom flex-row justify-content-center align-items-center" href="./vision.html">Visión</a>
-                <a class="btn-custom flex-row justify-content-center align-items-center" href="#">Historia</a>
+                <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/mision')?>">Misión</a>
+                <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/vision')?>">Visión</a>
+                <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/historia')?>">Historia</a>
             </div>
         </div>
         <div class="historia-body col-xs-12 col-sm-9 col-md-9" style="padding:0px;">
@@ -169,9 +169,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
             </div>
             <div class="historia-aside-mobil hidden-sm-up">
                 <div class="institucional-container row-flex align-items-center justify-content-center" >
-                    <a class="btn-custom flex-row justify-content-center align-items-center" href="./mision.html">Misión</a>
-                    <a class="btn-custom flex-row justify-content-center align-items-center" href="./vision.html">Visión</a>
-                    <a class="btn-custom flex-row justify-content-center align-items-center" href="#">Historia</a>
+                    <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/mision')?>">Misión</a>
+                    <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/vision')?>">Visión</a>
+                    <a class="btn-custom flex-row justify-content-center align-items-center" href="<?php echo base_url('index.php/home/historia')?>">Historia</a>
                 </div>
             </div>
             <div class="historia-content colunm-flex">

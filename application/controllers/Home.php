@@ -72,6 +72,15 @@ class Home extends CI_Controller {
         $this->load->view('noticias');
     }
 
+    public function noticia($noticia)
+    {
+        if($noticia === 'celiaquia'){
+            $this->load->view('que-es-cilaquia');
+        }
+        elseif($noticia === 'alimentos-sin-gluten'){
+            $this->load->view('alimentos-sin-gluten');
+        }
+    }
     public function precocidos()
     {
         $this->load->view('precocidos');
@@ -90,5 +99,22 @@ class Home extends CI_Controller {
     public function vision()
     {
         $this->load->view('vision');
+    }
+
+    public function sendmail()
+    {
+        $nombres = $this->input->post('nombres');
+        $telefono = $this->input->post('telefono');
+        $email = $this->input->post('email');
+        $compania = $this->input->post('compania');
+        $mensaje = $this->input->post('mensaje');
+        $email_body = "<html><p><Strong>Nombres:</Strong> $nombres</p><p><Strong>Correo:</Strong> $email</p><p><Strong>Teléfono:</Strong> $telefono</p><p><Strong>Compañia:</Strong> $compania</p><br/><p>$mensaje</p></html>";
+        $this->email->from($email, $nombres);
+        $this->email->to('info@cerealeslapradera.com');
+        $this->email->subject('Support');
+        $this->email->message($email_body);
+        $this->email->send();
+        echo "<script>alert('Mensaje enviado');</script>";
+        echo "<script>window.location.href='".base_url("index.php")."';</script>";
     }
 }

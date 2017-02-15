@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom_elements.css')?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/nav_bar.css')?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/noticias.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/noticia_pradera.css')?>">
     <script type="text/javascript" src="<?php echo base_url('assets/lib/jquery-1.11.3.min.js')?>" ></script>
     <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
@@ -56,45 +56,82 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
 </div>
 <div class="principal-body">
     <div class="principal-body-noticias">
-        <div id="logo" class="hidden-xs">
-            <img id="img-logo"  src="<?php echo base_url('assets/images/logoPortada.png')?>" />
+        <h1 class="text-center">Alimentos para un menú sin gluten</h1>
+        <h5 class="text-center">Febrero 4, 2017</h5>
+        <div id="images-div" class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
+            <img class="center-block img-responsive" src="<?php echo base_url('assets/images/noticias_pradera/alimentos-sin-gluten.jpg')?>" />
         </div>
-        <div id="images-div" class="hidden-xs col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-            <img class="img-responsive" src="<?php echo base_url('assets/images/noticias/noticias.jpg')?>" />
-        </div>
-        <div class="picture_row hidden-sm-up">
-            <div class="principal-body-procesados col-xs-12">
-                <div class="logo-container"></div>
-            </div>
-        </div>
-        <div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8 col-xs-12">
-            <div class="col-xs-12 col-md-4 col-sm-4">
-                <div class="thumbnail">
-                    <a href="<?php echo base_url('index.php/home/noticia/celiaquia')?>">
-                        <img class="img-responsive" src="<?php echo base_url('assets/images/noticias/celiaquia.jpg')?>" alt="noticias">
-                    </a>
-                    <div class="caption">
-                        <h5>¿Qué es la celiaquía?</h5>
-                        <p class=" noticia-info">La celiaquía o la enfermedad celíaca no es más que la intolerancia al gluten,
-                            una proteína presente en varios cereales como el trigo, la cebada y el centeno.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 col-sm-4">
-                <div class="thumbnail">
-                    <a href="<?php echo base_url('index.php/home/noticia/alimentos-sin-gluten')?>">
-                        <img class="img-responsive" src="<?php echo base_url('assets/images/noticias/popcorn.jpg')?>" alt="noticias">
-                    </a>
-                    <div class="caption">
-                        <h5 >Alimentos para un menú sin gluten</h5>
-                        <p class=" noticia-info">Cuando una persona es diagnotiscada con enfermedad celíaca suele estresarse al observar la cantidad de alimentos
-                            que el gastroenterólogo le indica no comer.</p>
-                    </div>
-                </div>
-            </div>
+        <div id="info" class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8">
+            <p >
+                Cuando una persona es diagnosticada con enfermedad celíaca suele estresarse al observar la cantidad de alimentos que el gastroenterólogo
+                le indica no comer. Sin embargo, debe saber que hay muchos sustititutos para su dieta, libres de esta proteína, que puede consumir y
+                combinar para elaborar deliciosas recetas.
+            </p>
+            <p>
+                La clave está en elaborar una lista de estos productos y ser conscientes de que la preparación también cuenta al momento de evitar trazas
+                de gluten. Es importante comenzar su dieta de la mano del nutricionista, pues no debe perder nutrientes indispensables en su nuevo hábito
+                alimenticio, así como revisar las etiquetas de información de cada producto que adquiera.
+            </p>
+            <p>
+                A continuación una breve guía de alimentos sin gluten:
+            </p>
+            <h5>En estado natural no poseen gluten</h5>
+            <p>
+                Carne<br>
+                Pescado<br>
+                Frutas<br>
+                Verduras<br>
+                Huevos<br>
+                Legumbres<br>
+                Leche<br>
+                Papas<br>
+            </p>
+            <h5>Azúcares</h5>
+            <p>
+                Almíbares<br>
+                Azúcar blanca y morena<br>
+                Miel<br>
+            </p>
+            <h5>Bebidas</h5>
+            <p>
+                Cafés de todo tipo<br>
+                Gaseosas<br>
+                Infusiones de hierbas naturales<br>
+                Zumos de frutas<br>
+            </p>
+            <h5>Cereales</h5>
+            <p>
+                Arroz<br>
+                Maíz<br>
+                Quinoa<br>
+                Amaranto<br>
+                Trigo Sarraceno<br>
+            </p>
+            <h5>Grasas</h5>
+            <p>
+                Aceites de todos los tipos<br>
+                Grasas animales<br>
+                Mantequilla tradicional<br>
+                Margarinas sin fibra<br>
+            </p>
+            <h5>Otros</h5>
+            <p>
+                Aceitunas con y sin hueso<br>
+                Encurtidos<br>
+                Canguil (maíz, aceite y sal)<br>
+                Cacao puro<br>
+                Especias naturales<br>
+            </p>
+            <p>
+                En el caso de embutidos, productos cárnicos o pescados congelados,
+                solo se pueden consumir los que no han sido procesados con otros alimentos.
+            </p>
+            <p>
+                <Strong>Fuente:</Strong> <a target="_blank" href="http://www.celiacos.org">www.celiacos.org</a>
+            </p>
         </div>
         <div id="volver" class="col-xs-12 col-sm-11 col-md-11">
-            <a href="<?php echo base_url('index.php/home/empresa')?>">Volver</a>
+            <a href="<?php echo base_url('index.php/home/noticias')?>">Volver</a>
         </div>
     </div>
 
