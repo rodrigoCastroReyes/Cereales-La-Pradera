@@ -108,10 +108,10 @@ class Home extends CI_Controller {
         $email = $this->input->post('email');
         $compania = $this->input->post('compania');
         $mensaje = $this->input->post('mensaje');
-        $email_body = "<html><p><Strong>Nombres:</Strong> $nombres</p><p><Strong>Correo:</Strong> $email</p><p><Strong>Teléfono:</Strong> $telefono</p><p><Strong>Compañia:</Strong> $compania</p><br/><p>$mensaje</p></html>";
-        $this->email->from($email, $nombres);
-        $this->email->to('info@cerealeslapradera.com');
-        $this->email->subject('Support');
+        $email_body = "<html><body><p><Strong>Datos del Cliente</Strong></p><p><Strong>Nombres:</Strong> $nombres</p><p><Strong>Teléfono:</Strong> $telefono</p><p><Strong>Compañia:</Strong> $compania</p><br/><p><Strong>Mensaje</Strong></p><p>$mensaje</p></body></html>";
+        $this->email->from($email);
+        $this->email->to('soporte@cerealeslapradera.com');
+        $this->email->subject('Mensaje de '.$nombres.' <'.$email.'>');
         $this->email->message($email_body);
         $this->email->send();
         echo "<script>alert('Mensaje enviado');</script>";
