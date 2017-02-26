@@ -126,7 +126,7 @@ input{
 
 @media only screen and (max-width: 767px) and (min-height: 500px){
 	.principal-bar{
-		height: 18%;
+		height: 100px;
 	}
 	.location-container{
 		height: 50px;

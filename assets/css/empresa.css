@@ -6,7 +6,7 @@ html,body{
 }
 
 .logo-container{
-    height: 30%;
+    height: 173px;
 }
 
 .row{
@@ -67,7 +67,9 @@ html,body{
     .principal-body-institucional-btns{
         padding-top: 200px;
     }
-
+    .logo-container{
+        height: 30%;
+    }
 }
 
 @media only screen and (min-height:  500px) and (min-width : 767px){
@@ -96,7 +98,7 @@ html,body{
     .logo-floating{
         position: absolute;
         background-image:url('../images/logoPortada.jpg');
-        background-size: 100% 100%; 
+        background-size: 100% 100%;
         height: 35%;
         width: 100%;
         top: 0;
@@ -131,10 +133,16 @@ html,body{
         padding-top: 280px;
     }
 
+    .logo-container{
+        height: 30%;
+    }
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1011px) {
-    
+    .logo-container{
+        height: 30%;
+    }
     html,body{
         width: 100%;
         height: 100%;

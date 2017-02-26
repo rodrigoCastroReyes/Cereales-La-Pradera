@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                     ,"/assets/images/historia/Foto4.jpg","/assets/images/historia/Foto5.jpg","/assets/images/historia/Foto6.jpg","/assets/images/historia/Foto7.jpg","/assets/images/historia/Foto8.jpg"]
             } else {
                 var images = ["/assets/images/historia/Foto1_mobil.jpg",
-                    "/assets/images/historia/Foto2_moil.jpg",
+                    "/assets/images/historia/Foto2_mobil.jpg",
                     "/assets/images/historia/Foto3_mobil.jpg",
                     "/assets/images/historia/Foto4.jpg",
                     "/assets/images/historia/Foto5_mobil.jpg",

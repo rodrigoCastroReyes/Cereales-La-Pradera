@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
         </div>
         <div id="buttons_bar" class="text-center">
             <span class="btn-custom" style="margin-right: 1%">Harinas</span>
-            <a class="btn-custom" href="<?php echo base_url('index.php/home/harinas_free')?>">Harinas Gluten Free</a>
+            <a class="btn-custom" href="<?php echo base_url('index.php/home/harinasfree')?>">Harinas Gluten Free</a>
         </div>
         <div class="description">
             <div class="title">Harinas</div>
