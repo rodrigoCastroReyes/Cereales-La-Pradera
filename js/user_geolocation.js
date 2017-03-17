@@ -85,7 +85,8 @@ function init() {
   
 	navigator.geolocation.getCurrentPosition(showCurrentPosition);
 	initAutocomplete();
-	//geocoder = new google.maps.Geocoder();
+	geocoder = new google.maps.Geocoder();
+
   $("#modal_map").on("shown.bs.modal", function () {
     google.maps.event.trigger(mapViewer, "resize");
     var locationLngLat = new google.maps.LatLng(user_location.latitud,user_location.longitud);
